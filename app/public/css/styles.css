@@ -1,0 +1,20 @@
+body {}
+
+.main-page-bg {
+    background: url('../images/soccer-bg.jpeg')no-repeat center center fixed;
+    /* opacity: 0.75; */
+}
+.welcome-message{
+    align-content: flex-start;
+    color:black;
+}
+.text-background{
+    padding: 20px;
+    background-color: white;
+    opacity: 0.70;
+}
+.nav-link {
+    color: white !important;
+    font-weight: bold;
+}
+
