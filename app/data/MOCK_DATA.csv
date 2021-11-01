@@ -1,0 +1,1001 @@
+assignmentID,assignmentStatus,refereeID,gamesID,gameDate,teamNames
+1,Accepted,27,57,6/6/2021,Universidade Federal da Bahia
+2,Accepted,176,433,3/21/2021,Chikushi Jogakuen University
+3,Unassigned,37,80,5/27/2021,University of Cincinnati
+4,Unassigned,165,414,7/20/2021,Universidade Federal do Amapá
+5,Assigned,186,147,4/2/2021,University of Alaska - Fairbanks
+6,Unassigned,96,462,3/16/2021,"University College London, University of London"
+7,Tentative,40,354,1/18/2021,Riga Teacher Training and Educational Management Academy
+8,Assigned,64,391,9/3/2021,Universidad del Centro Educativo Latinoamericano Rosario
+9,Tentative,125,100,5/5/2021,"University of Houston, Victoria"
+10,Tentative,183,379,1/25/2021,Chinhoyi University of Technology
+11,Assigned,58,222,3/7/2021,"St. Francis College, Fort Wayne"
+12,Accepted,26,115,3/5/2021,Lutheran Bible Institute of Seattle
+13,Accepted,13,223,10/24/2021,St. Petersburg State Electrotechnical University
+14,Assigned,68,188,10/12/2021,Wolkite University
+15,Unassigned,170,121,12/6/2020,New Bulgarian University
+16,Tentative,29,314,4/9/2021,University of Northern Colorado
+17,Unassigned,20,369,1/10/2021,Hochschule Albstadt-Sigmaringen
+18,Assigned,100,435,12/1/2020,University of the Southern Caribbean
+19,Assigned,97,451,1/12/2021,Universidad San Francisco de Quito
+20,Unassigned,99,250,7/20/2021,Brigham Young University Hawaii
+21,Accepted,19,213,7/7/2021,Redeemer College
+22,Tentative,39,211,7/16/2021,Metropolitan State College of Denver
+23,Unassigned,89,325,4/13/2021,University of Alberta
+24,Unassigned,164,322,12/26/2020,"American University of Hawaii, Punjab Campus"
+25,Unassigned,156,379,11/4/2020,Karachi Institute of Information Technology
+26,Unassigned,172,428,3/16/2021,Växjö University
+27,Assigned,113,350,1/20/2021,Huachiew Chalermprakiet University
+28,Tentative,197,141,11/1/2020,Troy University
+29,Tentative,195,131,9/28/2021,Hope College
+30,Unassigned,185,110,11/22/2020,School of the Visual Arts
+31,Accepted,6,201,11/22/2020,Universidad Central
+32,Unassigned,102,130,2/18/2021,University of Pennsylvania
+33,Accepted,51,426,4/22/2021,Polish-Japanese Institute of Information Technology in Warsaw
+34,Assigned,140,479,12/22/2020,Universitas Hasanuddin
+35,Tentative,50,23,5/26/2021,Doane College
+36,Assigned,134,293,3/12/2021,Urmia University of Technology
+37,Tentative,7,378,3/3/2021,University of Cagliari
+38,Assigned,146,463,4/8/2021,Universidad Nacional del Callao
+39,Accepted,69,80,8/29/2021,Shih Chien University
+40,Accepted,85,119,6/7/2021,National Open University of Nigeria
+41,Accepted,185,286,11/30/2020,Naval Postgraduate School
+42,Tentative,127,299,4/2/2021,Universidade de Caxias do Sul
+43,Tentative,15,299,12/18/2020,Grantham University
+44,Accepted,95,287,10/21/2021,Siberian Academy of Public Services
+45,Tentative,184,222,5/23/2021,Centro Universitário Senac
+46,Unassigned,30,379,2/12/2021,University of Illinois at Urbana-Champaign
+47,Assigned,52,247,2/27/2021,Ho Chi Minh City University of Law
+48,Accepted,103,456,6/29/2021,Mills Grae University
+49,Accepted,130,242,6/28/2021,Universidad Agroforestal Fernando A.Meriño
+50,Assigned,1,150,12/21/2020,Ohio State University - Mansfield
+51,Accepted,116,302,1/15/2021,Florida Christian College
+52,Unassigned,191,154,10/27/2021,Universidad Privada Boliviana
+53,Assigned,92,357,7/9/2021,Cranbrook Academy of Art
+54,Accepted,86,431,11/4/2020,University of the Philippines Open University
+55,Assigned,58,138,2/3/2021,Modern University for the Humanities
+56,Assigned,46,463,2/13/2021,University of Southern Europe (Monaco Business School)
+57,Assigned,162,64,5/1/2021,Florida Atlantic University
+58,Assigned,105,83,8/15/2021,Aomori University
+59,Assigned,161,402,12/13/2020,Université du Québec à Rimouski
+60,Accepted,162,342,8/27/2021,"Islamic Azad University, Bostanabad"
+61,Accepted,16,203,2/12/2021,Assam Agricultural University
+62,Assigned,154,114,10/23/2021,Eastern Oregon University
+63,Assigned,9,24,3/30/2021,Katholische Fachhochschule Norddeutschland
+64,Accepted,33,26,4/6/2021,University of Mary Hardin-Baylor
+65,Tentative,140,175,2/17/2021,Ahmadu Bello University
+66,Unassigned,25,425,2/25/2021,Hong Bang University International
+67,Assigned,54,182,4/22/2021,Shah Abdul Latif University Khairpur
+68,Accepted,80,68,10/18/2021,Université de Bamenda
+69,Assigned,118,268,4/24/2021,Riyadh College of Dentistry and Pharmacy
+70,Unassigned,16,324,2/17/2021,Universidad Libre de Colombia
+71,Unassigned,151,27,4/30/2021,"St.James's School of Medicine, Bonaire"
+72,Assigned,96,485,1/17/2021,Universidad Autónoma de Nayarit
+73,Unassigned,182,80,4/8/2021,Technological University of Iceland
+74,Assigned,139,450,11/18/2020,La Salle University
+75,Tentative,79,83,9/29/2021,Asian University of Bangladesh
+76,Unassigned,63,465,7/11/2021,North Dakota State University
+77,Accepted,73,70,3/16/2021,Setsunan University
+78,Assigned,29,222,4/3/2021,Jawaharlal Nehru University
+79,Tentative,120,466,11/22/2020,Busitema University
+80,Tentative,59,248,10/8/2021,Lawrence University
+81,Unassigned,157,342,12/7/2020,Ecole des Hautes Etudes Industrielles de Lille
+82,Tentative,124,462,4/29/2021,Universidad Bolivariana
+83,Assigned,194,493,9/30/2021,Xi'an Jiaotong-Liverpool University
+84,Assigned,68,399,1/29/2021,Shendi University
+85,Tentative,183,174,9/20/2021,Niger Delta University
+86,Unassigned,105,251,7/30/2021,Dubai Medical College for Girls
+87,Accepted,25,442,4/9/2021,GC University
+88,Accepted,95,99,6/11/2021,Fachhochschule für Bank- und Finanzwirtschaft
+89,Accepted,148,231,8/22/2021,Emerson College
+90,Tentative,76,228,3/14/2021,Philadelphia College of Bible
+91,Assigned,148,215,7/21/2021,North Carolina Agricultural and Technical State University
+92,Assigned,132,128,3/14/2021,Moldova State University
+93,Unassigned,117,240,12/17/2020,Universidad Privada del Valle
+94,Assigned,33,89,6/3/2021,Clarion University
+95,Unassigned,30,301,11/9/2020,International Business School Kelajak ILMI
+96,Assigned,43,265,7/8/2021,Sultan Mizan Zainal Abidin Polytechnic
+97,Tentative,129,259,5/27/2021,Yarmouk Private University 
+98,Unassigned,152,41,6/10/2021,Osaka International University
+99,Unassigned,17,222,11/30/2020,"Swiss Federal Institute of Technology, Lausanne"
+100,Accepted,91,437,8/3/2021,Hiroshima University of Economics
+101,Unassigned,6,53,8/13/2021,Boricua College
+102,Tentative,161,392,12/4/2020,Gandhi Institute of Technology and Managment
+103,Unassigned,193,250,10/17/2021,Ural Gorkij State University
+104,Tentative,95,245,6/2/2021,Ternopil Academy of National Economy
+105,Assigned,156,207,7/7/2021,Universidad Cuauhtémoc
+106,Assigned,103,142,4/9/2021,Ateneo de Zamboanga University
+107,Tentative,191,289,3/19/2021,Bahrain Polytechnic
+108,Accepted,176,254,3/25/2021,Massachusetts College of Liberal Arts
+109,Unassigned,179,476,2/15/2021,Columbia College Chicago
+110,Unassigned,102,319,5/21/2021,Instituto de Estudios Superiores de la Sierra
+111,Unassigned,48,35,7/13/2021,Ohu University
+112,Unassigned,155,420,6/30/2021,Cleveland Institute of Art
+113,Tentative,46,149,10/21/2021,Goucher College
+114,Assigned,159,82,12/16/2020,Libyan International Medical University (LIMU)
+115,Tentative,11,10,4/11/2021,Nippon Medical School
+116,Unassigned,67,131,2/22/2021,Savannah State University
+117,Accepted,90,90,5/14/2021,Université Alioune Diop de Bambey
+118,Assigned,185,289,9/14/2021,Kansai Gaidai University
+119,Assigned,87,486,10/12/2021,Universidad Autónoma Latinoamericana
+120,Assigned,26,42,8/9/2021,Helwan University
+121,Accepted,185,2,7/10/2021,Beloit College
+122,Unassigned,48,177,3/28/2021,"Management Development Institute of Singapore, Tashkent"
+123,Assigned,74,480,11/21/2020,East-West University
+124,Unassigned,141,198,1/2/2021,St. Petersburg State Theatre Arts Academy
+125,Accepted,181,352,1/6/2021,Usmanu Danfodiyo University Sokoto
+126,Assigned,181,195,10/25/2021,University of Derby
+127,Unassigned,25,395,7/7/2021,Universidad Mayor de San Andrés
+128,Accepted,142,179,12/14/2020,Universidad San Francisco Xavier
+129,Unassigned,26,245,7/1/2021,Volgograd State Technical University
+130,Tentative,58,360,10/1/2021,National University of Shipbuilding
+131,Tentative,17,17,5/17/2021,Al-Eman University
+132,Tentative,187,299,3/17/2021,Southern Adventist University
+133,Accepted,182,177,12/11/2020,"National American University, Denver"
+134,Assigned,121,205,8/12/2021,Escuela Superiore de Administración Pública
+135,Unassigned,199,314,4/20/2021,Kharkiv State Transport Technical University
+136,Unassigned,121,267,5/28/2021,Pathumthani University
+137,Accepted,65,88,6/1/2021,Fachhochschule Eberswalde
+138,Accepted,33,9,4/18/2021,University of Technology
+139,Unassigned,89,318,5/8/2021,Wentworth Institute of Technology
+140,Unassigned,96,137,4/1/2021,National Chi Nan University
+141,Unassigned,100,316,4/27/2021,University of Maryland University College
+142,Assigned,145,55,11/26/2020,Ohio University - Lancaster
+143,Tentative,24,277,12/19/2020,Universidade Federal de Juiz de Fora
+144,Assigned,151,145,9/4/2021,Universidade Estadual Paulista
+145,Tentative,150,427,11/23/2020,Ecole Nationale d'Architecture
+146,Accepted,158,150,6/21/2021,Stonehill College
+147,Tentative,180,496,8/25/2021,American World University
+148,Assigned,122,142,9/6/2021,Foreign Trade University
+149,Tentative,56,173,3/10/2021,Ecole des Hautes Etudes en Gestion Informatique et Communication
+150,Assigned,90,85,1/5/2021,Université de Toulouse
+151,Accepted,92,470,1/20/2021,Dutch University Institute for Art History (DUIA)
+152,Assigned,46,121,9/6/2021,Wentworth Institute of Technology
+153,Tentative,40,264,1/8/2021,Nippon Dental University
+154,Tentative,134,284,3/3/2021,Ecole Nationale Supérieure de l'Aéronautique et de l'Espace
+155,Assigned,179,375,12/9/2020,Stephen F. Austin State University
+156,Unassigned,137,308,1/17/2021,Universidad Tecnológica San Antonio de Machala
+157,Tentative,94,48,6/14/2021,Universidad de las Regiones Autónomas de la Costa Caribe Nicaragüense
+158,Accepted,51,164,2/1/2021,Jami Institute of Technology
+159,Assigned,129,73,12/4/2020,Universidade do Minho
+160,Assigned,192,271,12/7/2020,Technical University of Gdansk
+161,Tentative,24,194,6/21/2021,Central Agricultural University
+162,Tentative,72,88,9/20/2021,"Fachhochschule Stuttgart, Hochschule für Technik"
+163,Accepted,130,173,5/29/2021,Point Park College
+164,Unassigned,28,409,4/18/2021,Montana State University - Northern
+165,Assigned,135,178,7/12/2021,Turin Polytechnic University In Tashkent
+166,Tentative,169,425,11/4/2020,Brac University
+167,Accepted,13,192,11/27/2020,Bangladesh Agricultural University
+168,Accepted,182,500,9/17/2021,University of Ioannina
+169,Assigned,102,34,7/10/2021,Golden Gate University
+170,Assigned,107,469,11/12/2020,Mount Saint Vincent University
+171,Assigned,39,203,6/13/2021,Siena College
+172,Accepted,180,357,1/2/2021,Benue State University
+173,Tentative,101,424,7/16/2021,College Misericordia
+174,Tentative,10,500,8/29/2021,KASB Institute of Technology
+175,Accepted,96,93,5/13/2021,Ecole Supérieure de Commerce de Sophia Antipolis
+176,Tentative,7,193,11/15/2020,University of Saint La Salle
+177,Assigned,167,31,6/2/2021,Ohka Gakuen University
+178,Unassigned,8,202,9/1/2021,Université Hassan II - Mohammadia
+179,Tentative,152,82,2/23/2021,Ethiopian Civil Service University
+180,Assigned,197,235,5/12/2021,Alhosn University
+181,Unassigned,193,469,8/13/2021,Augsburg College
+182,Unassigned,124,34,2/6/2021,"Islamic Azad University, Roodehen"
+183,Tentative,83,27,4/20/2021,National University
+184,Unassigned,128,275,5/30/2021,Hiroshima City University
+185,Accepted,45,460,12/26/2020,Irbid National University
+186,Assigned,126,10,6/20/2021,University of Priština
+187,Accepted,195,135,7/1/2021,Shanmugha Arts Science Technology and Research Academy
+188,Tentative,151,167,9/13/2021,Chungnam National University
+189,Tentative,200,405,11/29/2020,Hanover College
+190,Assigned,20,15,11/26/2020,Fachhochschule Worms
+191,Accepted,142,232,10/29/2021,Palawan State University
+192,Unassigned,81,246,9/8/2021,Université Ibn Toufail
+193,Assigned,70,484,6/17/2021,Mangalore University
+194,Unassigned,45,478,6/29/2021,Universidade Lusíada de Angola
+195,Unassigned,51,417,8/25/2021,Hajvery University Lahore for Women
+196,Assigned,11,116,5/15/2021,Dar Al-Uloom Colleges
+197,Tentative,99,38,2/9/2021,Far Eastern State Technical Fisheries University
+198,Unassigned,100,278,7/25/2021,Oriental University
+199,Tentative,133,78,9/4/2021,Universidad de Guayaquil
+200,Unassigned,68,294,3/24/2021,Cambodia University of Specialties
+201,Assigned,119,233,11/28/2020,Kostroma State Technological University
+202,Accepted,11,464,11/20/2020,Wonkwang University
+203,Tentative,85,205,1/28/2021,University of Arkansas (System)
+204,Accepted,70,301,6/3/2021,Universidad de La Coruña
+205,Accepted,139,157,10/25/2021,Omsk State Technical University
+206,Assigned,28,190,9/27/2021,University College of Saint-Boniface
+207,Unassigned,101,238,7/5/2021,Academia de Studii Economice din Bucuresti
+208,Accepted,164,459,5/29/2021,Sambalpur University
+209,Assigned,179,242,4/2/2021,Kyoto University
+210,Assigned,161,441,8/17/2021,Université Cheikh Anta Diop
+211,Tentative,164,274,2/24/2021,National Taiwan College of the Arts
+212,Accepted,1,420,12/15/2020,Grace College
+213,Accepted,8,489,7/26/2021,Universidad Nacional de San Agustin
+214,Tentative,39,221,8/31/2021,Applied Science University
+215,Accepted,44,306,9/1/2021,University of Nebraska - Kearney
+216,Unassigned,185,420,2/18/2021,Gomel State Medical University
+217,Tentative,99,329,9/9/2021,State University of New York Health Sience Centre Syracuse
+218,Assigned,152,232,3/28/2021,Pennsylvania State University - Schuylkill
+219,Assigned,3,373,5/23/2021,National Taiwan College of the Arts
+220,Accepted,150,405,12/21/2020,West Bengal University of Technology
+221,Assigned,179,183,4/6/2021,Katholieke Hogeschool Leuven
+222,Unassigned,72,235,9/20/2021,College of Nursing and Allied Health Scinces
+223,Assigned,3,379,2/11/2021,Samara State Academy for Railway Transportation
+224,Accepted,58,200,1/15/2021,Chinese University of Hong Kong
+225,Assigned,191,363,3/8/2021,Instituts Supérieurs de Formation des Maîtres
+226,Unassigned,195,258,2/27/2021,Nukus State Teachers Training Institute
+227,Assigned,3,372,2/13/2021,Walter Sisulu University for Technology and Science
+228,Accepted,181,499,11/4/2020,Moscow Power Engineering Institute (Technical University)
+229,Assigned,188,9,12/11/2020,Southwest Jiaotong University
+230,Accepted,182,478,9/20/2021,Universidad Academia de Humanismo Cristiano
+231,Unassigned,63,424,7/5/2021,Universidade Cruzeiro do Sul
+232,Assigned,53,285,3/16/2021,Berne University
+233,Assigned,126,316,8/29/2021,Universidad Politecnica de Puerto Rico
+234,Accepted,192,31,4/12/2021,Mokpo National University
+235,Accepted,100,204,10/1/2021,University of Limerick
+236,Tentative,41,492,8/20/2021,Kagoshima Immaculate Heart University
+237,Tentative,113,458,2/6/2021,Free University of Tbilisi
+238,Assigned,114,68,7/1/2021,Victoria University
+239,Accepted,188,118,11/26/2020,Belarussian State University
+240,Accepted,44,241,10/2/2021,Manila Central University
+241,Accepted,134,61,8/10/2021,University of Da Nang
+242,Accepted,46,116,10/26/2021,Pedagogical University of Kielce
+243,Assigned,44,18,9/30/2021,New York Medical College
+244,Accepted,24,433,4/14/2021,Madison University (Distance Education)
+245,Unassigned,27,77,2/14/2021,Deylaman Institute of Higher Education
+246,Assigned,183,101,3/17/2021,Payame Noor University
+247,Assigned,170,244,3/20/2021,"University of New Brunswick, Saint John"
+248,Tentative,79,143,2/16/2021,Universidad del Istmo
+249,Accepted,84,69,10/26/2021,Meijo University
+250,Accepted,126,183,2/2/2021,University of Basrah
+251,Assigned,51,328,11/30/2020,Universidad Americana
+252,Unassigned,25,398,12/2/2020,Heilongjiang Commercial University
+253,Accepted,184,401,9/16/2021,Art Center College of Design
+254,Tentative,131,448,3/13/2021,University of Mary
+255,Accepted,196,298,8/1/2021,South Bank University
+256,Assigned,11,26,7/17/2021,University of Santo Tomas
+257,Assigned,78,91,11/26/2020,University of Idaho
+258,Unassigned,152,162,4/7/2021,Christ University
+259,Accepted,7,58,11/29/2020,Nanjing University of Posts and Telecommunications
+260,Tentative,135,196,6/3/2021,Xiamen University
+261,Tentative,5,323,6/12/2021,Aichi Medical University
+262,Unassigned,31,1,3/26/2021,St. Xavier University
+263,Tentative,77,379,4/17/2021,Nippon Dental University
+264,Unassigned,90,265,12/15/2020,Lviv Medical University
+265,Accepted,161,477,4/13/2021,International Ataturk Alatoo University
+266,Accepted,53,218,2/1/2021,Edith Cowan University
+267,Accepted,169,30,3/14/2021,Universidad Itaca
+268,Tentative,173,58,9/2/2021,Grand View College
+269,Unassigned,11,132,5/16/2021,Tezpur University
+270,Assigned,112,256,11/19/2020,Isfahan University
+271,Tentative,73,311,9/5/2021,Pillsbury Baptist Bible College
+272,Unassigned,49,289,12/7/2020,Korea Advanced Institute of Science & Technology
+273,Assigned,133,130,6/13/2021,Universitas Advent Indonesia
+274,Assigned,175,41,3/15/2021,Universidad Técnica Latinoamericana
+275,Assigned,141,193,3/26/2021,Khazar University
+276,Tentative,196,478,4/20/2021,Hadhramout University of Science and Technology 
+277,Accepted,173,186,12/30/2020,Saitama Institute of Technology
+278,Tentative,95,182,7/30/2021,Shonan Institute of Technology
+279,Unassigned,83,240,7/31/2021,Shaheed Benazir Bhutto Women University 
+280,Assigned,81,223,4/12/2021,University of Sheffield
+281,Unassigned,175,460,8/27/2021,Jordan University of Science and Technology
+282,Tentative,72,255,4/5/2021,Syrian International Private University for Science & Technology
+283,Assigned,83,69,2/27/2021,Tibet University
+284,Accepted,85,282,5/28/2021,"Universidad Católica Boliviana, Tarija"
+285,Unassigned,167,185,11/9/2020,Tajik National University
+286,Assigned,14,92,11/3/2020,Macau Polytechnic Institute
+287,Tentative,166,226,7/17/2021,Campbellsville College
+288,Unassigned,109,346,9/4/2021,"Universitatea de Vest ""Vasile Goldi&#351;"" "
+289,Accepted,179,311,1/10/2021,Eastern Mennonite University
+290,Unassigned,178,439,6/10/2021,State University of New York College of Technology at Farmingdale
+291,Tentative,127,103,3/16/2021,Academy of Economics in Wroclaw
+292,Accepted,116,142,1/19/2021,Ecole d'Ingénieurs en Informatique pour l'Industrie
+293,Assigned,64,350,6/24/2021,Institute for Command Engineers of The Ministry for Emergency Situations
+294,Assigned,139,73,8/6/2021,Pontificia Università Lateranense
+295,Accepted,100,262,9/12/2021,University of Fribourg
+296,Accepted,188,127,8/12/2021,Université Hassan Ier - Settat
+297,Unassigned,54,9,7/4/2021,Nagoya Women's University
+298,Assigned,148,41,9/2/2021,Polytechnic University
+299,Tentative,61,443,8/14/2021,Lausanne Hotel School (EHL)
+300,Assigned,133,46,11/22/2020,Liverpool Hope University College
+301,Tentative,197,76,12/22/2020,Polotsk State University
+302,Accepted,192,263,7/22/2021,"Dai Ichi University, College of Technology"
+303,Assigned,139,210,8/28/2021,City University
+304,Tentative,29,300,1/17/2021,Tianjin Medical University
+305,Unassigned,45,91,10/2/2021,Gemsville Technical University
+306,Accepted,158,461,2/3/2021,Technische Universität Dresden
+307,Tentative,130,201,7/9/2021,Delaware State University
+308,Assigned,188,229,1/14/2021,"Long Island University, Southampton College"
+309,Accepted,130,271,1/12/2021,University of California System
+310,Assigned,42,436,6/4/2021,Mount Royal College
+311,Accepted,170,166,3/31/2021,Universidad Metropolitana de Honduras
+312,Assigned,70,140,6/14/2021,University of Saint Joseph
+313,Unassigned,187,436,3/8/2021,William Carey College
+314,Assigned,129,42,3/8/2021,Hong Kong Shue Yan College
+315,Unassigned,26,309,8/31/2021,Vietnam Maritime University
+316,Unassigned,38,80,2/24/2021,Westminster International University in Tashkent
+317,Accepted,137,324,6/7/2021,Universitas Negeri Medan
+318,Unassigned,114,282,8/12/2021,Montana State University - Northern
+319,Tentative,164,330,1/26/2021,Al-Quds University - The Arab University in Jerusalem
+320,Accepted,119,34,9/19/2021,Ecole Normale Supérieure de Cachan
+321,Assigned,113,37,10/20/2021,"University ""Titu Maiorescu"""
+322,Assigned,106,359,7/9/2021,Higher School of University and Advanced Studies Pisa
+323,Assigned,1,134,5/30/2021,Instituto Politécnico de Viana do Castelo
+324,Assigned,4,201,4/16/2021,"DeVry Institute of Technology, DuPage"
+325,Tentative,91,159,8/5/2021,Colorado College
+326,Assigned,126,385,3/27/2021,Austin College
+327,Assigned,167,175,9/25/2021,Ecole Nationale d'Ingénieurs des Travaux Agricoles de Clermont-Ferrand
+328,Assigned,110,72,11/15/2020,International Culture University 
+329,Accepted,5,424,10/31/2020,Willamette University
+330,Tentative,68,487,6/19/2021,Karolinska Institute Stockholm
+331,Unassigned,187,480,5/1/2021,St. Michael's College
+332,Assigned,87,312,12/5/2020,Daito Bunka University
+333,Tentative,106,411,11/21/2020,Astrahan State Technical University
+334,Assigned,163,361,3/6/2021,University of Hartford
+335,Unassigned,146,432,7/14/2021,Vlerick Leuven Gent Management School
+336,Unassigned,78,189,12/29/2020,Kaliningrad State Technical University
+337,Assigned,187,403,6/17/2021,Hochschule Zittau/Görlitz (FH)
+338,Tentative,168,100,5/12/2021,Durham College
+339,Assigned,91,332,1/10/2021,Universidad Tecnológica América
+340,Assigned,45,178,11/6/2020,Siebold University of Nagasaki
+341,Tentative,169,17,6/20/2021,"University College London, University of London"
+342,Assigned,186,305,8/30/2021,University of Southern California
+343,Tentative,31,74,12/12/2020,Bank Street College of Education
+344,Tentative,186,261,10/2/2021,Heritage College
+345,Unassigned,184,146,3/21/2021,Eastern Michigan University
+346,Accepted,1,496,2/11/2021,"Fachhochschule Schwäbisch Hall, Hochschule für Gestaltung"
+347,Accepted,140,497,11/28/2020,Dominican College of San Rafael
+348,Unassigned,63,52,12/31/2020,United International University
+349,Assigned,12,166,12/4/2020,Malayer University
+350,Unassigned,58,248,2/13/2021,"University of New England, Westbrook College Campus"
+351,Unassigned,27,323,8/2/2021,George Brown College
+352,Assigned,165,127,4/15/2021,Allianze College of Medical Sciences (ACMS)
+353,Tentative,53,52,3/25/2021,"Fachhochschule Rottenburg, Hochschule für Forstwirtschaft"
+354,Accepted,51,221,6/29/2021,Judson College Elgin
+355,Accepted,29,209,5/12/2021,Institute of Management and Economy
+356,Tentative,52,120,9/28/2021,Institut Sains dan Teknologi Al Kamal
+357,Accepted,51,157,6/28/2021,Ohka Gakuen University
+358,Assigned,62,410,10/28/2021,University of La Verne
+359,Accepted,15,232,9/27/2021,University of Burdwan
+360,Tentative,146,495,8/6/2021,Bogazici University
+361,Assigned,4,224,7/3/2021,Annamalai University
+362,Tentative,148,8,10/8/2021,Hardin-Simmons University
+363,Tentative,4,424,2/6/2021,Kumamoto Institute of Technology
+364,Assigned,179,195,12/8/2020,Harbin Medical University
+365,Tentative,86,213,8/3/2021,Raffles University
+366,Unassigned,114,136,10/25/2021,"Teachers College, Columbia University"
+367,Assigned,42,153,12/20/2020,ABM University College
+368,Tentative,191,33,5/14/2021,Universiti Kuala Lumpur Malaysian Institute of Information Technology (MIIT)
+369,Assigned,14,236,12/13/2020,"Embry Riddle Aeronautical University, Prescott"
+370,Accepted,145,214,9/16/2021,Fachhochschule Kaiserslautern
+371,Tentative,113,74,12/8/2020,Babol Noshirvani University of Technology
+372,Accepted,109,182,1/10/2021,Nawroz University
+373,Assigned,83,115,4/8/2021,University of Bunkyo
+374,Assigned,126,458,11/19/2020,Universidad Técnica Particular de Loja
+375,Accepted,187,334,6/7/2021,Jissen Women's University
+376,Unassigned,147,389,1/1/2021,Universidad Santa Paula
+377,Assigned,98,89,5/6/2021,Notre Dame University
+378,Unassigned,62,352,10/2/2021,Universidad de La Laguna
+379,Assigned,56,293,11/21/2020,Kochi University of Technology
+380,Assigned,183,425,8/9/2021,Hadhramout University of Science and Technology 
+381,Assigned,175,237,3/28/2021,Higher School of Economics
+382,Accepted,189,43,1/21/2021,Universidad Católica de Santo Domingo
+383,Accepted,189,245,8/18/2021,Fresno City College
+384,Tentative,79,2,11/6/2020,Universität für angewandte Kunst Wien
+385,Assigned,118,135,4/16/2021,"National American University, Colorado Springs"
+386,Assigned,187,211,11/1/2020,Universiti Teknologi Malaysia
+387,Unassigned,132,277,8/14/2021,Dalarna University College
+388,Unassigned,176,432,12/26/2020,Universidad Nacional de Córdoba
+389,Accepted,50,484,10/30/2021,Targu-Mures University of Theatre
+390,Tentative,53,481,10/24/2021,International Higher School for Advanced Studies Trieste
+391,Accepted,101,45,5/15/2021,Southwestern University
+392,Tentative,125,36,6/27/2021,Modern University For Technology and Information
+393,Assigned,160,324,10/15/2021,Roger Williams University
+394,Accepted,89,256,12/18/2020,"University of the East, Ramon Magsaysay Memorial Medical Center"
+395,Assigned,22,130,11/1/2020,Sultan Abdul Halim Muadzam Shah Polytechnic
+396,Accepted,106,309,6/13/2021,Hiroshima Jogakuin University
+397,Assigned,72,359,3/27/2021,Kabul Health Sciences Institute
+398,Unassigned,13,280,12/5/2020,Caldwell College
+399,Tentative,117,485,5/24/2021,West Texas A&M University
+400,Unassigned,147,263,10/19/2021,Hong Kong Shue Yan College
+401,Accepted,105,198,9/19/2021,Universidad Católica de Santiago del Estero
+402,Assigned,185,327,5/9/2021,University of Glasgow
+403,Unassigned,121,323,4/19/2021,Nagoya Economics University
+404,Unassigned,48,252,3/13/2021,University of Louisiana at Monroe
+405,Tentative,66,426,2/25/2021,Ritsumeikan Asia Pacific University
+406,Tentative,144,349,4/29/2021,Divine Word University
+407,Unassigned,109,217,5/24/2021,St. Petersburg State Conservatory
+408,Unassigned,179,67,2/17/2021,Western Kentucky University
+409,Assigned,79,51,12/20/2020,Babol University of Medical Sciences
+410,Accepted,63,319,5/12/2021,Midlands State University
+411,Accepted,60,417,12/30/2020,Universidad Cientifica del Sur
+412,Assigned,46,390,3/29/2021,Universiteit Antwerpen
+413,Assigned,107,134,11/28/2020,"University of Houston, Clear Lake"
+414,Assigned,114,164,7/31/2021,King Abdullah University of Science and Technology 
+415,Assigned,114,269,2/5/2021,Saitama Medical School
+416,Accepted,6,136,4/28/2021,Central Buganda University
+417,Unassigned,142,179,8/21/2021,Miyagi Gakuin Women's College
+418,Assigned,197,291,9/3/2021,Brescia University
+419,Accepted,78,153,3/31/2021,Pázmány Péter Catholic University
+420,Accepted,46,108,5/24/2021,Universidad Nacional de San Juan
+421,Accepted,54,37,7/3/2021,Universidad Centroamericana
+422,Assigned,83,392,7/29/2021,Christian Theological Academy in Warszaw
+423,Unassigned,63,497,11/30/2020,Fachhochschule Frankfurt am Main
+424,Accepted,10,177,2/9/2021,Oberlin College
+425,Unassigned,93,200,9/14/2021,Shih Hsin University
+426,Tentative,132,418,4/26/2021,William Jewell College
+427,Accepted,186,68,5/23/2021,Capitol College
+428,Unassigned,107,389,7/17/2021,"California State University, Sacramento"
+429,Assigned,106,448,3/21/2021,Brandman University
+430,Tentative,72,32,6/27/2021,Higher Technological Institute
+431,Unassigned,153,197,10/15/2021,Bethany College Kansas
+432,Tentative,51,351,10/7/2021,Escuela Politécnica del Ejercito
+433,Unassigned,196,302,2/23/2021,Universitas Katolik Soegijapranoto
+434,Assigned,112,405,12/23/2020,Universidad Nacional del Callao
+435,Tentative,35,493,9/11/2021,Iqra University
+436,Assigned,47,7,1/26/2021,Moscow External University of the Humanities
+437,Accepted,170,361,10/8/2021,Mississippi Valley State University
+438,Tentative,95,255,12/13/2020,Harran University
+439,Unassigned,82,367,12/4/2020,Birsa Agricultural University
+440,Unassigned,81,149,3/16/2021,"Concordia College, Seward"
+441,Accepted,8,464,5/7/2021,Minamikyushu University
+442,Unassigned,109,499,8/15/2021,Université Cheikh Anta Diop
+443,Unassigned,38,281,3/19/2021,"Concordia College, St. Paul"
+444,Assigned,149,95,12/14/2020,Christchurch Polytechnic Institute of Technology
+445,Assigned,84,148,1/3/2021,Kingston University
+446,Tentative,76,83,10/8/2021,Universitat Oberta de Catalunya
+447,Tentative,36,83,12/11/2020,Vilnius Academy of Arts
+448,Unassigned,115,462,8/23/2021,Universidad Empresarial Siglio 21
+449,Tentative,191,380,1/14/2021,Guru Gobind Singh Indraprastha University
+450,Tentative,109,187,8/9/2021,Al Imam Al-Ouzai University
+451,Accepted,170,164,8/18/2021,Centre de Formation et de Perfectionnement des Journalistes
+452,Accepted,194,68,12/19/2020,Universidad Autónoma Metropolitana
+453,Tentative,192,108,2/11/2021,Ludwik Solski State Academy of Theatre in Cracow
+454,Accepted,88,42,3/15/2021,"University of California, Hastings College of Law"
+455,Unassigned,56,390,8/13/2021,Wolkite University
+456,Unassigned,52,314,12/4/2020,University of Medicine and Pharmacy of Cluj-Napoca
+457,Tentative,129,476,7/19/2021,Bournemouth University
+458,Unassigned,173,365,11/1/2020,Dnepropetrovsk National University
+459,Accepted,139,202,6/9/2021,Universidade Estácio de Sá
+460,Assigned,74,480,5/23/2021,Dominican University
+461,Assigned,94,354,9/30/2021,Universidad Autónoma de Las Américas
+462,Assigned,19,454,2/12/2021,Guangdong University of Foreign Studies
+463,Unassigned,162,154,2/1/2021,Kobe Jogakuin University
+464,Accepted,5,183,9/21/2021,University of Leeds
+465,Accepted,149,368,5/27/2021,University of Development Alternative
+466,Assigned,176,420,5/26/2021,Gezira College of Technology
+467,Tentative,12,476,2/17/2021,Université de Haute-Alsace
+468,Tentative,127,334,5/4/2021,Universidad de Cartago Florencio del Castillo
+469,Accepted,120,367,7/10/2021,Al Yarmouk University College
+470,Assigned,198,436,6/23/2021,Himeji Institute of Technology
+471,Tentative,60,65,5/27/2021,Universidad Nacional de La Plata
+472,Tentative,109,137,2/2/2021,Adventist University of Central Africa
+473,Tentative,127,228,2/20/2021,Georgia Institute of Technology
+474,Tentative,143,170,12/23/2020,Gansu Agricultural University
+475,Unassigned,137,139,5/31/2021,Hiroshima University of Economics
+476,Accepted,11,271,6/15/2021,Modern Acadmy
+477,Assigned,122,306,12/29/2020,National Formosa University
+478,Assigned,142,72,3/2/2021,Qingdao University
+479,Tentative,40,494,12/14/2020,College of St. Mary
+480,Unassigned,53,352,3/17/2021,Soran University
+481,Unassigned,22,189,6/13/2021,Augustana College
+482,Tentative,72,362,6/10/2021,Baker College of Owosso
+483,Unassigned,169,208,8/30/2021,Nanjing Medical University
+484,Assigned,131,257,9/1/2021,Islamic University in Uganda
+485,Assigned,197,483,8/9/2021,University of South Carolina - Lancaster
+486,Unassigned,58,380,2/28/2021,University of Missouri - Kansas City
+487,Accepted,190,120,3/18/2021,Greenville College
+488,Tentative,2,34,2/22/2021,Mills Grae University
+489,Tentative,61,485,12/9/2020,Orenburg State University
+490,Tentative,72,320,12/16/2020,University of Maryland at College Park
+491,Accepted,157,382,3/1/2021,Guilford College
+492,Tentative,189,83,7/25/2021,Sree Rama Krishna Degree College
+493,Unassigned,73,62,8/2/2021,Universidad de Alicante
+494,Accepted,139,155,3/31/2021,Konyang University
+495,Accepted,39,268,1/11/2021,University of lloilo
+496,Accepted,72,175,4/24/2021,Punjab Technical University
+497,Tentative,184,52,5/15/2021,Geneva College
+498,Unassigned,81,322,5/11/2021,Rock Valley College
+499,Accepted,132,467,3/21/2021,Universidad de Gerona
+500,Accepted,26,411,5/3/2021,International University of Travnik
+501,Assigned,175,46,9/22/2021,Florida State University
+502,Unassigned,165,128,8/9/2021,Northeastern Ohio University College of Medicine
+503,Assigned,44,392,6/21/2021,Ecole Supérieure d'Agriculture d'Angers
+504,Accepted,170,407,1/22/2021,Schiller International University
+505,Assigned,56,267,2/6/2021,"Music Academy ""Fryderyk Chopin"" in Warszaw"
+506,Assigned,123,210,1/31/2021,Govind Ballabh Pant University of Agriculture and Technology
+507,Tentative,49,136,7/28/2021,Austin Community College
+508,Accepted,61,288,11/12/2020,Nanjing Medical University
+509,Accepted,111,59,8/29/2021,Kent State University - Tuscarawas
+510,Assigned,152,224,3/23/2021,University of Peradeniya
+511,Accepted,165,500,9/14/2021,Cleary College
+512,Tentative,190,212,1/10/2021,University of New England
+513,Tentative,22,340,11/22/2020,Pennsylvania Institute of Technology
+514,Unassigned,42,361,7/16/2021,Royal Danish Academy of Music
+515,Tentative,16,479,8/13/2021,Institut Teknologi Telkom
+516,Tentative,134,252,9/6/2021,Institut Teknologi Bandung
+517,Accepted,10,452,12/14/2020,Université des Antilles et de la Guyane
+518,Tentative,73,40,1/15/2021,Trinity University School of Medicine
+519,Assigned,4,483,1/19/2021,University of Northampton
+520,Tentative,112,282,12/23/2020,Chiang Mai University
+521,Accepted,15,253,2/2/2021,Chongqing University of Technology
+522,Accepted,100,41,6/22/2021,Universidad Obrera de Mexico
+523,Accepted,195,376,1/30/2021,Muscat College
+524,Unassigned,116,319,2/27/2021,State University of New York College of Environmental Science and Forestry
+525,Assigned,59,199,2/21/2021,University of Maryland at College Park
+526,Accepted,119,167,1/10/2021,Universidad de La Salle
+527,Accepted,187,417,6/21/2021,Sinte Gleska University
+528,Unassigned,184,299,10/21/2021,Academy of Humanities and Economics in Lodz
+529,Tentative,131,342,3/6/2021,Ripon College
+530,Tentative,104,421,6/15/2021,Qassim University
+531,Accepted,3,151,12/4/2020,Aomori University of Health and Welfare
+532,Tentative,81,146,12/3/2020,IDRAC (Institut de recherche en action commerciale)
+533,Unassigned,192,10,6/9/2021,Instituto Politécnico da Guarda
+534,Tentative,146,468,11/1/2020,Toyo Eiwa Women's University
+535,Accepted,118,458,10/2/2021,Preston Institute of Management Sciences and Technology (PIMSAT)
+536,Unassigned,167,257,11/16/2020,Andrew Jackson University
+537,Accepted,113,264,6/7/2021,Samara State Technical University
+538,Accepted,199,9,3/21/2021,Eelo American University
+539,Assigned,38,154,2/7/2021,The Art Institute of Boston
+540,Unassigned,139,361,5/24/2021,Pennsylvania State University - Altoona
+541,Assigned,99,222,12/2/2020,Danish Business Academy
+542,Assigned,1,137,6/23/2021,Eiilm University
+543,Accepted,18,124,11/18/2020,Ecole Nationale des Travaux Publics de l'Etat
+544,Tentative,175,108,12/17/2020,St. Anthony College of Nursing
+545,Unassigned,117,324,5/15/2021,Marshall University
+546,Unassigned,187,79,7/22/2021,Universidad Pontificia de Salamanca
+547,Tentative,120,72,3/25/2021,Wayo Women's University
+548,Unassigned,115,363,3/14/2021,Sungkyul University
+549,Assigned,100,334,5/18/2021,Siam Technology College
+550,Assigned,79,217,8/30/2021,Medcenter One College of Nursing
+551,Assigned,16,291,1/12/2021,Christian-Albrechts-Universität Kiel
+552,Accepted,2,331,3/3/2021,Université de Gafsa
+553,Accepted,127,84,9/18/2021,Victoria University
+554,Assigned,33,454,1/13/2021,The Art Institutes International San Francisco
+555,Tentative,120,378,1/24/2021,Polytechnic University
+556,Tentative,99,3,3/4/2021,Dire Dawa University
+557,Assigned,41,337,3/14/2021,Colgate University
+558,Tentative,101,412,12/25/2020,The New School
+559,Tentative,170,471,4/21/2021,"University of California, Irvine"
+560,Tentative,139,91,2/13/2021,Nyack College
+561,Assigned,141,378,4/2/2021,Takushoku University
+562,Tentative,69,133,5/22/2021,Shihezi University 
+563,Tentative,89,66,10/19/2021,St. Bonaventure University
+564,Tentative,32,99,10/20/2021,Urbana University
+565,Tentative,189,55,6/7/2021,Ibaraki Prefectural University of Health Sciences
+566,Assigned,51,84,1/1/2021,Gaborone Universal College of Law
+567,Tentative,13,23,9/28/2021,Fachhochschule Osnabrück
+568,Unassigned,143,289,12/17/2020,University Institute of Architecture Venice
+569,Tentative,30,157,9/19/2021,Unity  University
+570,Tentative,141,265,12/29/2020,Andrews University
+571,Unassigned,24,192,8/10/2021," Akanu Ibiam Federal Polytechnic, Unwana"
+572,Tentative,130,190,5/31/2021,Instituto Tecnológico de Celaya
+573,Accepted,188,211,11/27/2020,Universidad Fray Luca Paccioli
+574,Assigned,36,227,10/21/2021,Holy Names College
+575,Tentative,156,375,9/30/2021,Principia College
+576,Assigned,176,357,5/31/2021,Duke University
+577,Tentative,176,238,4/16/2021,Southern Illinois University at Carbondale
+578,Tentative,123,339,7/17/2021,Anhui University of Traditional Chinese Medicine
+579,Accepted,28,442,5/30/2021,Dnepropetrovsk National University
+580,Assigned,170,41,7/21/2021,Al Maarif University College
+581,Unassigned,135,224,3/1/2021,Darton College
+582,Unassigned,38,148,1/4/2021,Universidad del Norte
+583,Assigned,101,402,4/13/2021,Universidade Estadual de Montes Claros
+584,Unassigned,144,54,8/6/2021,Ecole Nationale de la Météorologie
+585,Accepted,157,284,5/30/2021,Shannon College of Hotel Management
+586,Unassigned,112,207,10/26/2021,New Bulgarian University
+587,Tentative,156,135,5/5/2021,Touro University
+588,Accepted,105,52,7/6/2021,"School of Oriental and African Studies, University of London"
+589,Accepted,75,360,6/22/2021,Universidad de Jaén
+590,Tentative,158,320,2/2/2021,Rusangu University
+591,Accepted,122,294,4/24/2021,Simpson College Iowa
+592,Assigned,50,40,9/16/2021,Universidad del Valle de México
+593,Unassigned,124,209,12/16/2020,Ling Tung University
+594,Tentative,184,137,10/8/2021,Athlone Institute of Technology
+595,Tentative,42,240,1/30/2021,Universitas Tanjungpura
+596,Accepted,30,213,10/18/2021,Ulsan University
+597,Accepted,120,173,9/17/2021,Universidade Federal do Ceará
+598,Accepted,33,318,10/18/2021,Taipei Medical College
+599,Tentative,19,39,12/19/2020,Universitas Negeri Manado
+600,Unassigned,187,132,2/17/2021,Universidad de León
+601,Accepted,52,427,7/1/2021,Universidad Albert Einstein
+602,Assigned,80,241,6/7/2021,Seijo University
+603,Accepted,189,65,5/31/2021,University of Sibiu
+604,Tentative,89,12,8/23/2021,Universidad Bicentenaria de Aragua
+605,Unassigned,26,292,6/25/2021,University of Tuzla
+606,Assigned,126,209,4/10/2021,University of Saint La Salle
+607,Accepted,39,274,5/5/2021,Hope International University
+608,Unassigned,24,374,5/6/2021,Uttar Pradesh Technical University
+609,Tentative,190,497,11/12/2020,Universitas Kristen Krida Wacana
+610,Unassigned,34,479,3/24/2021,Claremont McKenna College
+611,Tentative,190,310,6/6/2021,South Carolina State University
+612,Accepted,31,5,1/7/2021,Kyushu International University
+613,Tentative,154,278,7/31/2021,Universidad del Valle del Bravo
+614,Assigned,143,249,6/10/2021,Ho Chi Minh City University of Law
+615,Accepted,36,22,6/11/2021,Amber University
+616,Accepted,121,439,1/25/2021,Freed-Hardeman University
+617,Tentative,110,138,6/13/2021,Fachhochschule JOANNEUM
+618,Accepted,31,255,7/26/2021,"Universidad Autónoma ""Benito Juárez"" de Oaxaca"
+619,Assigned,38,333,8/20/2021,Rochester College
+620,Accepted,49,135,10/4/2021,Medizinische Universität Wien
+621,Unassigned,189,331,9/12/2021,"DeVry Institute of Technology, Columbus"
+622,Accepted,195,37,3/21/2021,St. Anthony College of Nursing
+623,Tentative,18,296,8/13/2021,Moscow State University of Culture
+624,Assigned,17,21,7/4/2021,Universidad de las Américas - Puebla
+625,Assigned,184,355,3/28/2021,West Coast University (WCU) 
+626,Tentative,54,403,6/6/2021,Chiang Mai Vocational College
+627,Unassigned,132,75,7/22/2021,"Fachhochschule Westküste, Hochschule für Wirtschaft und Technik"
+628,Accepted,194,210,3/5/2021,Gezira College of Technology
+629,Assigned,166,448,5/28/2021,University of Texas at Tyler
+630,Assigned,26,109,9/23/2021,Minot State University
+631,Tentative,196,291,11/28/2020,Pan-African University
+632,Unassigned,53,481,3/20/2021,Columbus University
+633,Unassigned,176,479,4/14/2021,University of Nebraska (System)
+634,Tentative,181,309,9/1/2021,Pan-African University
+635,Tentative,92,477,8/30/2021,Universidad Itaca
+636,Accepted,42,105,4/2/2021,University of Colorado Health Sciences Center
+637,Unassigned,189,215,10/8/2021,Shanghai University of Engineering Science
+638,Accepted,10,95,11/27/2020,Zurich University of Applied Sciences Winterthur
+639,Accepted,30,229,12/6/2020,Universitas Janabadra
+640,Accepted,129,374,3/5/2021,Heartland Baptist Bible College
+641,Assigned,103,253,8/6/2021,Hochschule Fulda
+642,Accepted,56,138,8/11/2021,Université Catholique de Lyon
+643,Tentative,4,359,4/18/2021,Musashi Institute of Technology
+644,Assigned,31,293,2/28/2021,Mount Marty College
+645,Unassigned,36,221,3/29/2021,Beijing Information Science and Technology University
+646,Assigned,43,409,6/6/2021,George Washington University
+647,Tentative,26,55,4/17/2021,Toho Gakuen School of Music
+648,Accepted,188,367,10/24/2021,International School of Business Management
+649,Unassigned,72,17,5/13/2021,Obninsk State Technical University for Nuclear Power Engineering
+650,Accepted,186,411,4/29/2021,Universidad de Cádiz
+651,Tentative,140,194,5/13/2021,University of Sopron
+652,Unassigned,48,205,1/23/2021,Zhejiang Normal University
+653,Unassigned,168,413,3/26/2021,State University of New York Maritime College
+654,Assigned,128,294,9/26/2021,Universität Hohenheim
+655,Unassigned,181,193,10/25/2021,Kansas State University
+656,Unassigned,100,225,12/20/2020,Women's College of Fine Arts
+657,Tentative,59,298,11/15/2020,St. Mary's College of Maryland
+658,Unassigned,146,423,1/10/2021,Varna Free University
+659,Unassigned,52,172,9/21/2021,University of Kalamoon
+660,Accepted,86,410,6/29/2021,Université du Burundi
+661,Accepted,18,39,10/7/2021,Chinhoyi University of Technology
+662,Tentative,32,371,12/11/2020,Shanmugha Arts Science Technology and Research Academy
+663,Assigned,12,340,8/30/2021,Universidad de La Frontera
+664,Unassigned,97,414,4/2/2021,European International University
+665,Unassigned,82,361,9/9/2021,Universidad Nacional de Jujuy
+666,Unassigned,50,83,4/28/2021,Duksung Women's University
+667,Accepted,90,207,8/30/2021,Brussels School of International Studies
+668,Tentative,99,114,3/13/2021,Illinois College of Optometry
+669,Tentative,120,100,10/22/2021,University of Huddersfield
+670,Accepted,72,13,4/16/2021,Alagappa University
+671,Tentative,36,119,10/6/2021,Marymount University
+672,Accepted,190,498,1/28/2021,Universidad Técnica del Norte
+673,Tentative,21,170,4/25/2021,University of Wisconsin - Milwaukee
+674,Accepted,1,213,1/14/2021,"University of Perpetual Help, System Dalta"
+675,Unassigned,150,466,5/9/2021,Escuela de Administración de Negocios
+676,Assigned,23,212,12/6/2020,Saito College
+677,Tentative,92,105,10/7/2021,Universidad Externado de Colombia
+678,Tentative,68,331,3/4/2021,Southern California College
+679,Assigned,99,254,1/5/2021,University of Arkansas at Fayetteville
+680,Assigned,102,363,10/8/2021,Universidad Francisco Gavidia
+681,Assigned,78,98,4/28/2021,Franciscan School of Theology
+682,Assigned,29,192,9/11/2021,Shandong University of Science and Technology
+683,Tentative,170,125,7/27/2021,Deylaman Institute of Higher Education
+684,Accepted,12,86,8/12/2021,Chengdu Institute of Sichuan International Studies University
+685,Assigned,196,246,11/15/2020,Czech University of Agriculture Prague
+686,Tentative,191,267,3/26/2021,Universidad Jóse Vasconcelos
+687,Tentative,53,108,9/30/2021,International University of Southern Europe
+688,Unassigned,47,365,6/29/2021,Universidad Panamericana de San Salvador
+689,Tentative,94,274,12/24/2020,South Eastern University of Sri Lanka
+690,Assigned,120,96,1/19/2021,Meisei University
+691,Assigned,56,252,9/22/2021,Dong Yang University of Technology
+692,Assigned,61,195,3/9/2021,Harbin Medical University
+693,Assigned,161,422,6/29/2021,Tarlac State University
+694,Unassigned,39,435,1/20/2021,Firat (Euphrates) University
+695,Accepted,90,339,1/21/2021,Lagrange College
+696,Assigned,118,394,3/20/2021,National Mining University
+697,Accepted,195,10,1/8/2021,Canadian Sudanese College
+698,Accepted,161,117,12/18/2020,Central America Health Sciences University (Belize Medical College)
+699,Tentative,194,260,3/4/2021,"Skyline University College, Sharjah"
+700,Unassigned,183,430,8/19/2021,Hanoi University of Architecture
+701,Unassigned,115,280,1/16/2021,Cedarville College
+702,Unassigned,151,448,11/11/2020, Huaihua University
+703,Tentative,67,243,7/18/2021,Ho Chi Minh City University of Natural Sciences
+704,Accepted,95,29,1/29/2021,University of South Carolina - Union
+705,Tentative,114,370,2/7/2021,Chiang Mai Rajabhat University
+706,Assigned,6,42,4/18/2021,Université Julius Nyerere Kankan
+707,Unassigned,137,326,10/12/2021,Saratov State Agrarian University
+708,Unassigned,138,89,10/2/2021,Police Academy
+709,Tentative,44,20,3/5/2021,Universidad Adventista de Bolivia
+710,Tentative,3,94,3/10/2021,Huizhou University
+711,Accepted,100,373,10/3/2021,Universiti Malaysia Terengganu
+712,Accepted,66,96,4/25/2021,Nivadhana University
+713,Tentative,82,462,12/23/2020,University of Central Texas
+714,Assigned,175,100,10/22/2021,Boricua College
+715,Accepted,40,446,6/26/2021,University of Kabianga
+716,Tentative,28,444,12/8/2020,Shandong Economic University
+717,Tentative,145,182,6/10/2021,Royal Military College of Canada
+718,Tentative,88,128,9/27/2021,Universitas Jember
+719,Accepted,125,171,8/12/2021,Beijing University of Agriculture
+720,Unassigned,200,118,10/23/2021,University of Piraeus
+721,Assigned,91,236,10/26/2021,University of Cincinnati
+722,Tentative,194,136,4/18/2021,Institut Supérieur de Commerce et d'Administration des Entreprises
+723,Accepted,59,313,2/28/2021,"National Institute of Technology, Trichy"
+724,Tentative,92,484,10/22/2021,"University of California, San Diego"
+725,Unassigned,85,134,2/15/2021,Novosibirsk State University
+726,Accepted,67,471,4/26/2021,Université de la Manouba
+727,Assigned,174,196,7/11/2021,University of Dundee
+728,Accepted,111,39,1/9/2021,"COMSATS Institute of Information Technology, Lahore"
+729,Assigned,23,461,10/28/2021,Kwame Nkrumah University of Science and Technology
+730,Unassigned,134,126,5/1/2021,Academy of Public Administration
+731,Accepted,11,444,7/4/2021,Grodno State Medical University
+732,Assigned,40,355,9/24/2021,Salem College
+733,Assigned,98,416,4/9/2021,Technical University of Cracow
+734,Accepted,104,423,12/25/2020,Vancouver Community College
+735,Accepted,85,359,2/24/2021,European Regional Educational Academy of Armenia
+736,Tentative,185,484,8/3/2021,Qinghai University
+737,Tentative,49,64,12/15/2020,Poznan School of Banking
+738,Tentative,89,206,2/17/2021,Columbia College Hollywood
+739,Tentative,81,430,7/25/2021,Tokyo University of Agriculture and Technology
+740,Assigned,89,69,4/16/2021,Hue University
+741,Assigned,189,16,6/20/2021,Divine Word University
+742,Accepted,3,430,1/5/2021,University of Southern Queensland
+743,Tentative,96,433,10/15/2021,Siberian State Transport University
+744,Tentative,37,203,10/25/2021,Loyola Marymount University
+745,Unassigned,180,152,1/19/2021,Jeonju University
+746,Assigned,187,154,1/7/2021,Divine Word College of Legazpi
+747,Assigned,92,189,1/27/2021,"Institute Of Technology, Australia"
+748,Assigned,181,303,10/13/2021,Ecole Centrale de Lyon
+749,Tentative,147,442,3/15/2021,Ibaraki Christian College
+750,Assigned,68,471,5/27/2021,Wenzhou University
+751,Assigned,12,373,3/28/2021,Virginia Union University
+752,Accepted,37,433,3/30/2021,Luhansk Taras Shevchenko National Pedagogical University
+753,Assigned,80,232,12/21/2020,Chiang Mai Vocational College
+754,Unassigned,73,21,4/15/2021,Josai International University
+755,Tentative,102,99,11/21/2020,University of Science and Culture
+756,Tentative,100,214,10/15/2021,Universität Stuttgart
+757,Tentative,46,138,7/3/2021,İstanbul Şehir University
+758,Tentative,166,403,8/7/2021,"Ecole Européenne de Chimie, Polymères et Matériaux de Strasbourg"
+759,Accepted,23,422,9/18/2021,University of Sannio
+760,Tentative,25,376,11/11/2020,Nagaoka University of Technology
+761,Accepted,39,448,3/6/2021,University of Fiji
+762,Assigned,92,83,2/19/2021,Bourgas Free University
+763,Accepted,65,242,9/5/2021,Western States Chiropractic College
+764,Unassigned,36,279,8/29/2021,"Fachhochschule Furtwangen, Hochschule für Technik und Wirtschaft"
+765,Tentative,109,332,6/4/2021,Universität Lüneburg
+766,Assigned,153,460,4/27/2021,Sikha 'O' Anushandhan University
+767,Accepted,140,121,3/27/2021,Wesleyan University
+768,Unassigned,24,358,7/28/2021,Changwon National University
+769,Accepted,21,19,1/23/2021,Gauhati University
+770,Accepted,113,421,11/12/2020,Hebei University of Economics and Trade
+771,Assigned,189,139,7/12/2021,Andrassy Gyula German Speaking University Budapest
+772,Assigned,131,187,11/7/2020,Universidad Autónoma de Occidente
+773,Accepted,131,220,6/1/2021,Ecole Nationale Supérieure de Chimie de Lille
+774,Unassigned,122,93,5/20/2021,Viterbo College
+775,Accepted,163,275,1/1/2021,Shimonoseki City University
+776,Accepted,141,166,1/6/2021,University of Cagliari
+777,Unassigned,113,473,6/26/2021,Mongolian State University of Education
+778,Accepted,150,176,1/10/2021,Ball State University
+779,Assigned,142,139,9/27/2021,Fachhochschule Regensburg
+780,Tentative,85,357,11/21/2020,Business & Computer University College
+781,Unassigned,93,55,4/14/2021,Universidad Católica Santa María La Antigua
+782,Assigned,74,110,4/3/2021,Gallaudet University
+783,Assigned,196,348,3/20/2021,Université de M'sila
+784,Tentative,191,99,3/20/2021,Nkumba University
+785,Accepted,111,409,8/9/2021,Université de Fianarantsoa
+786,Assigned,157,305,5/25/2021,Volyn National University Lesja Ukrainka
+787,Accepted,200,341,3/6/2021,"Universidad Nacional Experimental ""Francisco de Miranda"""
+788,Accepted,188,183,11/25/2020,Sarah Lawrence College
+789,Assigned,9,369,7/15/2021,King's College
+790,Unassigned,135,171,4/8/2021,National University of Internal Affairs
+791,Accepted,78,297,3/4/2021,Air University
+792,Tentative,5,414,12/30/2020,Ohio Valley College
+793,Tentative,75,376,12/28/2020,Universiti Teknologi Mara
+794,Accepted,148,175,10/28/2021,Dokkyo University School of Medicine
+795,Accepted,166,310,5/4/2021,Regent University
+796,Tentative,70,349,4/17/2021,International Buddhist University
+797,Unassigned,11,218,9/10/2021,Universidad de Granma
+798,Tentative,107,64,1/23/2021,University of Guam
+799,Tentative,100,202,12/1/2020,Capilano College
+800,Accepted,21,171,6/19/2021,Hajee Mohammad Danesh Science and Technology University
+801,Tentative,168,112,4/10/2021,European Business School
+802,Assigned,83,85,5/24/2021,Institut National des Postes et Télécommunications
+803,Tentative,184,493,3/21/2021,Shenyang Institute of Chemical Technology
+804,Assigned,166,16,5/25/2021,University School of Physical Education
+805,Assigned,168,168,2/15/2021,"Fachhochschule Kempten, Hochschule für Technik und Wirtschaft"
+806,Assigned,69,346,6/20/2021,Saitama Institute of Technology
+807,Accepted,125,212,10/20/2021,City University
+808,Tentative,44,344,2/24/2021,First Nations University of Canada
+809,Assigned,88,262,6/5/2021,East Kazakstan State Technical University
+810,Assigned,6,342,11/8/2020,Universitas Kristen Indonesia
+811,Tentative,82,159,3/11/2021,Brescia College
+812,Accepted,191,19,4/19/2021,Gifu Keizai University
+813,Assigned,129,383,3/7/2021,Mejiro University
+814,Assigned,75,144,10/10/2021,Fachhochschule Eberswalde
+815,Tentative,135,8,8/24/2021,"Institute of Teachers Education, Raja Melewar"
+816,Accepted,32,212,3/29/2021,Duquesne University
+817,Unassigned,190,195,10/7/2021,Polytechnic University of the Philippines
+818,Unassigned,159,280,9/5/2021,Universität für Bodenkultur Wien
+819,Tentative,111,55,9/15/2021,University of Lausanne
+820,Unassigned,165,412,1/1/2021,"Dai Ichi University, College of Technology"
+821,Assigned,6,107,4/3/2021,Chonnam National University
+822,Assigned,167,415,10/22/2021,Technological University (Dawei)
+823,Unassigned,196,45,12/28/2020,University of Malawi
+824,Unassigned,169,241,5/18/2021,Tokyo Engineering University
+825,Tentative,119,348,11/19/2020,Beijing Petroleum University
+826,Unassigned,87,440,5/12/2021,Technical University of Kenya
+827,Unassigned,12,329,8/21/2021,"Islamic Azad University, Shahrood"
+828,Assigned,136,301,5/28/2021,European Academy of Arts in Warsaw
+829,Tentative,27,115,11/24/2020,School of Education Pisa
+830,Tentative,10,26,10/31/2020,University of Strathclyde
+831,Accepted,91,61,6/25/2021,Katholische Fachhochschule Mainz
+832,Tentative,151,270,1/2/2021,Manhattan Christian College
+833,Accepted,169,7,5/20/2021,Novosibirsk State Technical University
+834,Tentative,29,328,6/9/2021,Wilson College
+835,Tentative,110,237,9/1/2021,Taizhou College
+836,Accepted,43,342,5/26/2021,Chongqing University
+837,Accepted,114,289,12/17/2020,University of Fiji
+838,Accepted,53,2,7/10/2021,Universiti Kebangsaan Malaysia
+839,Accepted,42,240,5/22/2021,Miyagi Gakuin Women's College
+840,Assigned,1,130,7/3/2021,University of Gujrat
+841,Tentative,92,498,1/7/2021,Université Euro-Afrique
+842,Tentative,76,435,11/26/2020,Dunya Institute of Higher Education
+843,Tentative,139,281,7/16/2021,"Preston University, Pakistan Campus"
+844,Assigned,171,263,10/23/2021,Qinghai University
+845,Unassigned,191,303,9/9/2021,University of Opole
+846,Accepted,182,448,8/3/2021,Universidad Mayor
+847,Assigned,26,78,7/30/2021,Mendeleev Russian University of Chemical Technology
+848,Assigned,26,81,7/12/2021,Aichi Prefectural University of Fine Arts & Music
+849,Tentative,41,364,1/13/2021,Instituto Politécnico de Beja
+850,Accepted,57,288,9/12/2021,San Francisco Art Institute
+851,Assigned,18,458,12/2/2020,Université de Yaoundé II
+852,Tentative,95,360,2/2/2021,Eckerd College
+853,Unassigned,70,153,7/19/2021,Tokyo University of Pharmacy and Life Science
+854,Tentative,82,374,5/14/2021,Medical College of Pennsylvania and Hahnemann University
+855,Unassigned,149,423,4/14/2021,University of Zagreb
+856,Unassigned,182,236,7/6/2021,Belarussian State Technological University
+857,Assigned,77,63,6/27/2021,Buraydah College for Applied Medical Sciences
+858,Unassigned,184,356,9/10/2021,Ecole Nationale Supérieure d'Agronomie de Rennes
+859,Assigned,29,210,5/27/2021,Wimbledon School of Art
+860,Tentative,61,474,8/24/2021,"Islamic Azad University, Varamin"
+861,Tentative,45,265,4/18/2021,University of New Brunswick
+862,Tentative,64,49,8/4/2021,Government College University Lahore
+863,Tentative,67,362,3/30/2021,Universidade Federal de Santa Catarina
+864,Assigned,104,216,3/4/2021,The Master's College
+865,Tentative,6,427,5/26/2021,Ashesi University
+866,Accepted,93,54,1/18/2021,Universidad Privada San Juan Bautista
+867,Accepted,20,274,5/8/2021,Institute for Advanced Studies Lucca
+868,Tentative,26,43,10/27/2021,Universidad Bernardo O'Higgins
+869,Unassigned,57,401,1/14/2021,Pontificia Università S. Tommaso
+870,Accepted,12,389,6/5/2021,Khabarovsk State University of Technology
+871,Accepted,171,37,9/4/2021,University of Illinois at Springfield
+872,Unassigned,20,309,11/6/2020,University of Veterinary & Animal Science
+873,Accepted,170,152,7/16/2021,Walailak University
+874,Tentative,178,270,5/12/2021,Technical University of Cluj-Napoca
+875,Assigned,63,279,7/5/2021,Ecole Supérieure Internationale d'Administration des Entreprises
+876,Tentative,70,363,4/19/2021,"Rajasthan Agricultural University, Bikaner"
+877,Tentative,103,446,6/22/2021,Universidad de Ciencias de la Informatica
+878,Accepted,75,311,4/25/2021,Hebei Agricultural University
+879,Unassigned,191,209,7/14/2021,Pak-AIMS (American Institute of Management Sciences)
+880,Tentative,110,433,6/17/2021,Indian School of Business Management and Administration
+881,Tentative,100,341,9/1/2021,Université Mohammed V - Souissi
+882,Accepted,117,455,3/22/2021,Far Eastern State Technical Fisheries University
+883,Assigned,151,218,1/20/2021,Universidad Rural de Guatemala
+884,Assigned,11,339,1/10/2021,The Defiance College
+885,Unassigned,33,163,11/2/2020,Mustafa Kemal University
+886,Assigned,177,251,12/9/2020,Shih Chien University
+887,Unassigned,17,374,2/23/2021,Cranfield University
+888,Accepted,97,343,1/10/2021,Deutsche Telekom Fachhochschule Leipzig
+889,Unassigned,145,275,4/25/2021,Hochschule für Philosophie München
+890,Accepted,117,35,3/28/2021,Lulea University of Technology
+891,Tentative,119,264,11/15/2020,Université de Ouagadougou
+892,Assigned,151,291,10/15/2021,Kwansei Gakuin University
+893,Unassigned,47,224,7/27/2021,Nuclear Institute for Agriculture and Biology (NIAB)
+894,Unassigned,89,477,12/7/2020,Sherman College of Straight Chiropractic
+895,Assigned,137,228,4/10/2021,Lingnan University
+896,Unassigned,78,306,2/27/2021,Trakya University
+897,Assigned,49,295,12/2/2020,Dutch Delta University
+898,Unassigned,160,482,8/8/2021,Illinois Benedictine University
+899,Tentative,194,252,11/17/2020,Arab Open University
+900,Assigned,56,355,6/1/2021,Krasnoyarsk State Technical University
+901,Unassigned,79,410,10/28/2021,University of Wisconsin - Madison
+902,Tentative,162,136,8/9/2021,Ecole Nationale Supérieure d'Agronomie de Montpellier
+903,Tentative,27,345,10/15/2021,European Humanities University
+904,Tentative,55,425,10/14/2021,Al Ahlia University
+905,Unassigned,88,133,1/31/2021,Jai Prakash University
+906,Assigned,36,63,7/1/2021,The College of New Jersey
+907,Accepted,47,270,5/21/2021,Pondicherry University
+908,Tentative,68,33,3/31/2021,Universidad Popular de Nicaragua (UPONIC)
+909,Tentative,71,397,12/28/2020,Universidad Libre de Costa Rica
+910,Tentative,151,349,6/30/2021,Lakeland College
+911,Accepted,58,193,6/27/2021,Eckerd College
+912,Assigned,119,100,11/12/2020,University of Malakand
+913,Unassigned,183,10,2/8/2021,Moscow Power Engineering Institute (Technical University)
+914,Assigned,168,405,1/31/2021,"Islamic Azad University, Qom"
+915,Unassigned,26,43,1/9/2021,"Islamic Azad University, Najaf Abad"
+916,Accepted,109,390,4/22/2021,Izmir Institute of Technology
+917,Unassigned,150,226,3/16/2021,Takestan Islamic Azad University
+918,Accepted,87,362,2/21/2021,University of Management and Technology
+919,Tentative,32,40,9/20/2021,Texas A&M International University
+920,Tentative,87,213,10/5/2021,Universidad Juan Misael Saracho
+921,Unassigned,131,392,1/24/2021,Universität Bayreuth
+922,Accepted,200,425,12/19/2020,American College of Thessaloniki
+923,Accepted,146,184,5/19/2021,Maryam Institute of Higher Education
+924,Assigned,118,47,2/15/2021,"Islamic Azad University, Kerman"
+925,Assigned,140,279,2/1/2021,University of Sydney
+926,Accepted,1,154,2/10/2021,Ecole Normale Supérieure de Lyon
+927,Accepted,164,427,11/10/2020,Northern Alberta Institute of Technology
+928,Assigned,102,157,11/22/2020,Fundação Educacional de Ituverava
+929,Unassigned,116,358,4/1/2021,Pontifcia Università Urbaniana
+930,Tentative,139,424,7/10/2021,University of Catania
+931,Tentative,50,185,8/10/2021,China University of Geoscience Beijing
+932,Unassigned,50,231,5/1/2021,Syrian International Private University for Science & Technology
+933,Accepted,136,178,11/18/2020,"Institute of Teachers Education, Dato' Razali Ismail "
+934,Accepted,190,385,3/31/2021,University of Utah
+935,Tentative,129,465,8/20/2021,Otterbein College
+936,Accepted,81,360,11/5/2020,"Universidad de Bogotá ""Jorge Tadeo Lozano"""
+937,Accepted,165,115,6/21/2021,Shandong University of Science and Technology
+938,Assigned,63,66,1/31/2021,Seonam University
+939,Assigned,45,216,1/30/2021,Hungarian Academy of Fine Arts Budapest
+940,Assigned,154,376,4/28/2021,Karachi School of Art
+941,Unassigned,100,368,7/23/2021,Kazan State University of Medicine
+942,Unassigned,11,441,6/14/2021,Taj International College
+943,Assigned,174,97,6/2/2021,University of Pretoria
+944,Accepted,137,209,10/17/2021,Institut National Polytechnique de Toulouse
+945,Unassigned,28,316,1/3/2021,Jobu University
+946,Assigned,50,101,9/8/2021,Suwon University
+947,Assigned,29,35,12/18/2020,Novosibirsk State Medical Academy
+948,Assigned,127,454,4/21/2021,Higher Institute of Agriculture and Animal Husbandry
+949,Accepted,130,289,1/26/2021,"Islamic Azad University, North Tehran"
+950,Accepted,69,97,1/28/2021,"Rasmussen College, Minnesota Campuses"
+951,Assigned,131,387,8/26/2021,Universidad Tecnológica de Pereira
+952,Accepted,61,332,3/11/2021,Universidad Ricardo Palma
+953,Tentative,30,11,11/9/2020,Southwest Forestry University
+954,Assigned,190,218,6/11/2021,University of Newcastle
+955,Assigned,111,412,7/22/2021,St. Petersburg State Technical University
+956,Tentative,122,8,4/18/2021,"Institute of Teachers Education, Perlis"
+957,Assigned,97,414,10/15/2021,"Cleveland Chiropractic College, Los Angeles"
+958,Unassigned,146,11,10/20/2021,Meharry Medical College
+959,Tentative,83,11,1/6/2021,National Defence Medical College
+960,Assigned,11,295,11/30/2020,Marij State Technical University
+961,Unassigned,123,460,1/28/2021,Nankai University
+962,Accepted,63,117,2/20/2021,"University of Maine, Machias"
+963,Unassigned,6,14,10/6/2021,Universidad Autónoma de Nayarit
+964,Tentative,65,26,3/27/2021,Finance Academy
+965,Tentative,72,139,6/9/2021,Mesa State College
+966,Unassigned,88,366,4/7/2021,Augustana College
+967,Unassigned,19,372,9/15/2021,Universidad de Guanajuato
+968,Accepted,64,289,12/30/2020,University of Mashhad Pnu
+969,Assigned,7,478,10/4/2021,Bryn Athyn College of the New Church
+970,Tentative,48,145,1/14/2021,Universidade do Algarve
+971,Tentative,154,212,2/12/2021,Saitama Medical School
+972,Tentative,95,145,3/24/2021,Saigon University
+973,Unassigned,170,119,10/12/2021,Uttarakhand Open University 
+974,Unassigned,197,61,12/29/2020,Universidade Estadual do Centro-Oeste
+975,Assigned,160,242,3/11/2021,Albany College of Pharmacy
+976,Tentative,114,178,6/16/2021,Lviv Polytechnic National University
+977,Tentative,188,474,4/5/2021,Acharya Ranga Agricultural University
+978,Assigned,167,40,10/16/2021,University of Engineering and Technology Peshawar
+979,Accepted,149,137,11/14/2020,Osaka University of Foreign Studies
+980,Unassigned,144,37,10/31/2020,Pathumthani University
+981,Accepted,84,442,3/22/2021,University of Munawwar-ul-Islam
+982,Tentative,194,163,2/2/2021,Technological University (Hpaan)
+983,Assigned,33,445,11/11/2020,East Central University
+984,Accepted,75,57,8/5/2021,Liaoning Normal University
+985,Unassigned,152,244,7/4/2021,Ateneo de Zamboanga University
+986,Assigned,135,165,6/30/2021,Pfeiffer University
+987,Unassigned,103,280,7/9/2021,Universitas Nasional Jakarta
+988,Assigned,185,60,3/23/2021,Ibn Sina National College for Medical Studies 
+989,Tentative,147,305,11/5/2020,Nanhua University
+990,Accepted,179,12,11/15/2020,Technological University (West Yangon)
+991,Accepted,73,412,5/19/2021,Institute for the Economy in Transition
+992,Unassigned,71,208,10/20/2021,Ahvaz University of Medical Sciences
+993,Unassigned,167,467,5/28/2021,University of Ontario Institute of Technology
+994,Unassigned,153,133,1/20/2021,Adekunle Ajasin University
+995,Assigned,167,480,7/18/2021,University of South Bohemia
+996,Assigned,185,409,4/3/2021,Ittihad University
+997,Tentative,152,255,5/23/2021,Constantin Brancoveanu University Pitesti
+998,Assigned,112,425,3/16/2021,Universidad Técnica Particular de Loja
+999,Accepted,74,98,10/26/2021,South Texas College of Law
+1000,Unassigned,8,224,8/23/2021,Bahria University
