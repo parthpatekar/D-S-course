@@ -1,7 +1,8 @@
 const Controller = {
     data() {
         return {
-            refereeList: []
+            refereeList: [],
+            newRefereeForm: {}
         }
     },
     methods: {

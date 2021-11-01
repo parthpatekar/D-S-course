@@ -17,4 +17,8 @@
     color: white !important;
     font-weight: bold;
 }
-
+.table,
+.table tr,
+.table td {
+    background-color: white !important;
+}
