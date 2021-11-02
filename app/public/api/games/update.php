@@ -1,5 +1,10 @@
 <?php
 
+if (($_SERVER['REQUEST_METHOD'] ?? '') != 'POST') {
+    header($_SERVER["SERVER_PROTOCOL"] . " 405 Method Not Allowed");
+    exit;
+}
+
 try {
     $_POST = json_decode(
                 file_get_contents('php://input'), 
@@ -14,13 +19,7 @@ try {
     exit;
 }
 
-// if (($_SERVER['REQUEST_METHOD'] ?? '') != 'POST') {
-//     header($_SERVER["SERVER_PROTOCOL"] . " 405 Method Not Allowed");
-//     exit;
-// }
-
 require("class/DbConnection.php");
-
 
 // Step 0: Validate the incoming data
 // This code doesn't do that, but should ...
@@ -32,15 +31,20 @@ $db = DbConnection::getConnection();
 // Step 2: Create & run the query
 // Note the use of parameterized statements to avoid injection
 $stmt = $db->prepare(
-  'insert into Referees (refereeFirstName, refereeLastName, refereeAge, refereeGrade)
-  values (?, ?, ?, ?);'
+  'UPDATE Games SET 
+    gameDateTime = ?,
+    gameLevel = ?,
+    fieldName = ?,
+    fieldLocation = ?,
+  WHERE gameID = ?'
 );
 
 $stmt->execute([
-  $_POST['refereeFirstName'],
-  $_POST['refereeLastName'],
-  $_POST['refereeAge'],
-  $_POST['refereeGrade']
+  $_POST['gameDateTime'],
+  $_POST['gameLevel'],
+  $_POST['fieldName'],
+  $_POST['fieldLocation'],
+  $_POST['gameID'],
 ]);
 
 // Get auto-generated PK from DB
@@ -51,4 +55,5 @@ $stmt->execute([
 // Here, instead of giving output, I'm redirecting to the SELECT API,
 // just in case the data changed by entering it
 header('HTTP/1.1 303 See Other');
-header('Location: ../referees/referees.php');
+// header('Location: ../offer/?student=' . $_POST['studentId']);
+header('Location: ../games/games.php');

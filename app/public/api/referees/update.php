@@ -1,9 +1,9 @@
 <?php
 
-// if (($_SERVER['REQUEST_METHOD'] ?? '') != 'POST') {
-//     header($_SERVER["SERVER_PROTOCOL"] . " 405 Method Not Allowed");
-//     exit;
-// }
+if (($_SERVER['REQUEST_METHOD'] ?? '') != 'POST') {
+    header($_SERVER["SERVER_PROTOCOL"] . " 405 Method Not Allowed");
+    exit;
+}
 
 try {
     $_POST = json_decode(
@@ -31,24 +31,20 @@ $db = DbConnection::getConnection();
 // Step 2: Create & run the query
 // Note the use of parameterized statements to avoid injection
 $stmt = $db->prepare(
-  'UPDATE books SET 
-    image = ?,
-    title = ?,
-    author = ?,
-    yearPublished = ?,
-    pageCount = ?,
-    msrp = ?
-  WHERE id = ?'
+  'UPDATE Referees SET 
+    refereeFirstName = ?,
+    refereeLastName = ?,
+    refereeAge = ?,
+    refereeGrade = ?,
+  WHERE refereeID = ?'
 );
 
 $stmt->execute([
-  $_POST['image'],
-  $_POST['title'],
-  $_POST['author'],
-  $_POST['yearPublished'],
-  $_POST['pageCount'],
-  $_POST['msrp'],
-  $_POST['id'],
+  $_POST['refereeFirstName'],
+  $_POST['refereeLastName'],
+  $_POST['refereeAge'],
+  $_POST['refereeGrade'],
+  $_POST['refereeID'],
 ]);
 
 // Get auto-generated PK from DB
@@ -60,4 +56,4 @@ $stmt->execute([
 // just in case the data changed by entering it
 header('HTTP/1.1 303 See Other');
 // header('Location: ../offer/?student=' . $_POST['studentId']);
-header('Location: ../books/index.php');
+header('Location: ../referees/referees.php');
