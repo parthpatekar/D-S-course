@@ -1,4 +1,4 @@
-const GameController = {
+const GamesController = {
     data() {
         return {
             gameList: [],
@@ -48,9 +48,10 @@ const GameController = {
                     "Content-Type": "application/json; charset=utf-8"
                 }
             })
-            .then( response => response.json() )
+            .then( response => {
+                return response.json();
+            })
             .then( json => {
-                console.log(json);
                 this.gameList = json;
                 this.newGameForm = {};
             });
@@ -77,4 +78,4 @@ const GameController = {
     }
 }
 
-Vue.createApp(GameController).mount('#game-controller')
+Vue.createApp(GamesController).mount('#games-controller')

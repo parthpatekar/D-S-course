@@ -1,23 +1,19 @@
 <?php
 
-// if (($_SERVER['REQUEST_METHOD'] ?? '') != 'POST') {
-//     header($_SERVER["SERVER_PROTOCOL"] . " 405 Method Not Allowed");
-//     exit;
-// }
-
 try {
     $_POST = json_decode(
-                file_get_contents('php://input'), 
+                file_get_contents('php://input'),
                 true,
                 2,
                 JSON_THROW_ON_ERROR
             );
-            print_r($_POST);
 } catch (Exception $e) {
     header($_SERVER["SERVER_PROTOCOL"] . " 400 Bad Request");    
     // echo file_get_contents('php://input');
     exit;
 }
+
+// print_r($content);
 
 require("class/DbConnection.php");
 
@@ -31,7 +27,7 @@ $db = DbConnection::getConnection();
 // Step 2: Create & run the query
 // Note the use of parameterized statements to avoid injection
 $stmt = $db->prepare(
-  'DELETE FROM Referees WHERE refereeID = ?'
+  'DELETE FROM Referees WHERE refereeID = ?;'
 );
 
 $stmt->execute([
@@ -46,5 +42,4 @@ $stmt->execute([
 // Here, instead of giving output, I'm redirecting to the SELECT API,
 // just in case the data changed by entering it
 header('HTTP/1.1 303 See Other');
-// header('Location: ../offer/?student=' . $_POST['studentId']);
 header('Location: ../referees/referees.php');

@@ -39,7 +39,7 @@
         <main>
             <div class="row">
                 <div class="col-lg-12">
-                    <div id="referee-controller">
+                    <div id="app">
                         <table id="referee-table" class="table">
                             <thead>
                                 <th>
@@ -87,19 +87,19 @@
                                       </button>
                                     </span>
                                     <span v-else>
-                                      <button v-on:click="save(referee)" name="save" class="btn btn-success btn-sm">
+                                      <button v-on:click="save(referee, 'referee')" name="save" class="btn btn-success btn-sm">
                                         <i class="bi-save"></i>
                                       </button>
                                     </span>
                                 </td>
                                 <td>
                                   <span v-if="!referee.editmode">
-                                    <button type="button" name="delete" v-on:click="deleteReferee(referee)" class="btn btn-danger btn-sm">
+                                    <button v-on:click="deleteEntity(referee, 'referee')" name="delete" class="btn btn-danger btn-sm">
                                       <i class="bi-trash"></i>
                                     </button>
                                   </span>  
                                   <span v-else>
-                                    <button v-on:click="cancelEdit(referee)" name="save" class="btn btn-danger btn-sm">
+                                    <button v-on:click="cancelEdit(referee, 'referee')" name="cancel-edit" class="btn btn-danger btn-sm">
                                       <i class="bi bi-x"></i>
                                     </button>
                                   </span>             
@@ -107,18 +107,18 @@
                               </tr>                
                               <tr>                  
                                 <td>
-                                  <form id="new-referee-form" v-on:submit.prevent="addNewReferee()">
-                                    <input type="text" name="refereeFirstName" v-model="newRefereeForm.refereeFirstName" placeholder="First Name">
+                                  <form id="new-referee-form" v-on:submit.prevent="addNew($event, 'referee')">
+                                    <input type="text" name="refereeFirstName" v-model="newForm.refereeFirstName" placeholder="First Name">
                                   </form>
                                 </td>
                                 <td>
-                                    <input form="new-referee-form" type="text" v-model="newRefereeForm.refereeLastName" placeholder="Last Name">
+                                    <input form="new-referee-form" type="text" v-model="newForm.refereeLastName" placeholder="Last Name">
                                 </td>
                                 <td>
-                                    <input form="new-referee-form" type="number" min="21" max="50" v-model="newRefereeForm.refereeAge" placeholder="Age">
+                                    <input form="new-referee-form" type="number" min="21" max="50" v-model="newForm.refereeAge" placeholder="Age">
                                 </td>
                                 <td>
-                                    <input form="new-referee-form" type="number" min="1" max="4" v-model="newRefereeForm.refereeGrade" placeholder="Grade">
+                                    <input form="new-referee-form" type="number" min="1" max="4" v-model="newForm.refereeGrade" placeholder="Grade">
                                 </td>
                                 <td>
                                     <button form="new-referee-form" type="submit" name="add" class="btn btn-success btn-sm">
@@ -140,7 +140,7 @@
 
         </footer>
     </div>
-    <script src="js/refereeController.js"></script>
+    <script src="js/app.js"></script>
     <script src="https://unpkg.com/vue@next"></script>
 </body>
 

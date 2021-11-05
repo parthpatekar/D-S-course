@@ -1,10 +1,5 @@
 <?php
 
-if (($_SERVER['REQUEST_METHOD'] ?? '') != 'POST') {
-    header($_SERVER["SERVER_PROTOCOL"] . " 405 Method Not Allowed");
-    exit;
-}
-
 try {
     $_POST = json_decode(
                 file_get_contents('php://input'), 
@@ -14,8 +9,6 @@ try {
             );
 } catch (Exception $e) {
     header($_SERVER["SERVER_PROTOCOL"] . " 400 Bad Request");
-    // print_r($_POST);
-    // echo file_get_contents('php://input');
     exit;
 }
 
@@ -35,17 +28,17 @@ $stmt = $db->prepare(
     gameDateTime = ?,
     gameLevel = ?,
     fieldName = ?,
-    fieldLocation = ?,
+    fieldLocation = ?
   WHERE gameID = ?'
 );
 
-$stmt->execute([
+if($stmt->execute([
   $_POST['gameDateTime'],
   $_POST['gameLevel'],
   $_POST['fieldName'],
   $_POST['fieldLocation'],
   $_POST['gameID'],
-]);
+]))
 
 // Get auto-generated PK from DB
 // https://www.php.net/manual/en/pdo.lastinsertid.php
@@ -55,5 +48,4 @@ $stmt->execute([
 // Here, instead of giving output, I'm redirecting to the SELECT API,
 // just in case the data changed by entering it
 header('HTTP/1.1 303 See Other');
-// header('Location: ../offer/?student=' . $_POST['studentId']);
 header('Location: ../games/games.php');
