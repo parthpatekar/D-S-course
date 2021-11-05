@@ -39,7 +39,7 @@
         <main>
             <div class="row">
                 <div class="col-lg-12">
-                    <div id="games-controller">
+                    <div id="app">
                         <table id="games-table" class="table">
                             <thead>
                                 <th>
@@ -62,7 +62,7 @@
                                 </th>
                             </thead>
                             <tbody>
-                              <tr v-for="game in gameList">
+                              <tr v-for="game in gamesList">
                                 <td>
                                     <!-- <span v-if="game.editmode"><input v-model="game.gameFirstName" placeholder="First Name"></span>
                                     <span v-else> {{ game.gameLevel }} </span> -->
@@ -89,19 +89,19 @@
                                       </button>
                                     </span>
                                     <span v-else>
-                                      <button v-on:click="save(game)" name="save" class="btn btn-success btn-sm">
+                                      <button v-on:click="save(game, 'game')" name="save" class="btn btn-success btn-sm">
                                         <i class="bi-save"></i>
                                       </button>
                                     </span>
                                 </td>
                                 <td>
                                   <span v-if="!game.editmode">
-                                    <button type="button" name="delete" v-on:click="deleteGame(game)" class="btn btn-danger btn-sm">
+                                    <button type="button" name="delete" v-on:click="deleteEntity(game, 'game')" class="btn btn-danger btn-sm">
                                       <i class="bi-trash"></i>
                                     </button>
                                   </span>  
                                   <span v-else>
-                                    <button v-on:click="cancelEdit(game)" name="save" class="btn btn-danger btn-sm">
+                                    <button v-on:click="cancelEdit(game, 'game')" name="save" class="btn btn-danger btn-sm">
                                       <i class="bi bi-x"></i>
                                     </button>
                                   </span>             
@@ -112,16 +112,16 @@
 
                                 </td>
                                 <td>
-                                  <form id="new-game-form" v-on:submit.prevent="addNewGame()">
-                                    <input type="text" v-model="newGameForm.gameDateTime" placeholder="Date & Time">
+                                  <form id="new-game-form" v-on:submit.prevent="addNew($event, 'game')">
+                                    <input type="text" v-model="newForm.gameDateTime" placeholder="Date & Time">
                                   </form>
                                 </td>
                                 <td>
-                                    <input form="new-game-form" type="number" min="1" max="4" v-model="newGameForm.gameLevel" placeholder="Game Level">
+                                    <input form="new-game-form" type="number" min="1" max="4" v-model="newForm.gameLevel" placeholder="Game Level">
                                 </td>
                                 <td>
-                                    <input form="new-game-form" type="text" v-model="newGameForm.fieldName" placeholder="Field Name">
-                                    <input form="new-game-form" type="text" v-model="newGameForm.fieldLocation" placeholder="Field Location">
+                                    <input form="new-game-form" type="text" v-model="newForm.fieldName" placeholder="Field Name">
+                                    <input form="new-game-form" type="text" v-model="newForm.fieldLocation" placeholder="Field Location">
                                 </td>
                                 <td>
                                     <button form="new-game-form" type="submit" name="add" class="btn btn-success btn-sm">
@@ -143,7 +143,7 @@
 
         </footer>      
     </div>
-    <script src="js/gamesController.js"></script>
+    <script src="js/app.js"></script>
     <script src="https://unpkg.com/vue@next"></script>
 </body>
 

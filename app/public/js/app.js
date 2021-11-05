@@ -1,18 +1,28 @@
 const App = {
     data() {
         return {
-            refereeList: [],
+            refereesList: [],
             gamesList: [],
             newForm: {},
             updateForm: {}
         }
     },
     methods: {
-        fetchRefereeList() {
+        fetchRefereesList() {
             fetch('/api/referees/referees.php')
             .then( response => response.json() )
             .then( (responseJson) => {                
-                this.refereeList = responseJson;                
+                this.refereesList = responseJson;                
+            })
+            .catch( (err) => {
+                console.error(err);
+            })
+        },
+        fetchGamesList() {
+            fetch('/api/games/games.php')
+            .then( response => response.json() )
+            .then( (responseJson) => {                
+                this.gamesList = responseJson;                
             })
             .catch( (err) => {
                 console.error(err);
@@ -24,15 +34,19 @@ const App = {
         cancelEdit(entity, entityType){
             entity.editmode = false;
             if(entityType == 'referee')
-                this.fetchRefereeList();
+                this.fetchRefereesList();
+            else if(entityType == 'game')
+                this.fetchGamesList();
         },
         save(entity, entityType){   
             this.updateForm = entity;
             entity.editmode = false;
+
             if(entityType == 'referee')
                 var request = 'api/referees/update.php';
-            // else if(entityType == 'games')
-            //     var
+            else if(entityType == 'game')
+                var request = 'api/games/update.php';
+            
             fetch(request, {
                 method:'POST',
                 body: JSON.stringify(this.updateForm),
@@ -40,16 +54,21 @@ const App = {
                   "Content-Type": "application/json; charset=utf-8"
                 }
             })
-            .then( response => response.json() )
-            .then( json => {
+            .then( () => {
                 if(entityType == 'referee')
-                    this.refereeList = json;
+                    this.fetchRefereesList();
+                else if(entityType == 'game')
+                    this.fetchGamesList();
                 this.updateForm = {};
-            });
+            });            
         },
         addNew(event, entityType) {
             if(entityType == 'referee')
                 var request = '/api/referees/create.php';
+            else if(entityType == 'game')
+                var request = '/api/games/create.php';
+
+            console.log(JSON.stringify(this.newForm));
             fetch(request, {
                 method: "POST",
                 body: JSON.stringify(this.newForm),
@@ -57,19 +76,19 @@ const App = {
                     "Content-Type": "application/json; charset=utf-8"
                 }
             })
-            .then( response => {
-                return response.json();
-            })
-            .then( json => {
+            .then( () => {
                 if(entityType == 'referee')
-                    this.refereeList = json;
+                    this.fetchRefereesList();
+                else if(entityType == 'game')
+                    this.fetchGamesList();
                 this.newForm = {};
             });
         },
         deleteEntity(entity, entityType) {
-            console.log('Yo!');
             if(entityType == 'referee')
                 var message = "Are you sure you want to delete the referee, " + entity.refereeFirstName + " " + entity.refereeLastName + "?";
+            else if(entityType == 'game')
+                var message = "Are you sure you want to delete the game, " + " " + entity.gameLocation + "?";
 
             if (!confirm(message)) {
                 return ;
@@ -77,6 +96,9 @@ const App = {
 
             if(entityType == 'referee')
                 var request = 'api/referees/delete.php';
+            else if(entityType == 'game')
+                var request = 'api/games/delete.php';
+            
             fetch(request, {
                 method:'POST',
                 body: JSON.stringify(entity),
@@ -84,15 +106,17 @@ const App = {
                   "Content-Type": "application/json; charset=utf-8"
                 }
             })
-            .then( response => response.json() )
-            .then( json => {
+            .then( () => {
                 if(entityType == 'referee')
-                    this.refereeList = json;
-            });
-        }        
+                    this.fetchRefereesList();
+                else if(entityType == 'game')
+                    this.fetchGamesList();
+            });            
+        }
     },
     created() {
-        this.fetchRefereeList();
+        this.fetchRefereesList();
+        this.fetchGamesList();
     }
 }
 

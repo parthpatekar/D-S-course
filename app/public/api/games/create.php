@@ -2,18 +2,22 @@
 
 try {
     $_POST = json_decode(
-                file_get_contents('php://input'), 
+                file_get_contents('php://input'),
                 true,
                 2,
                 JSON_THROW_ON_ERROR
             );
 } catch (Exception $e) {
     header($_SERVER["SERVER_PROTOCOL"] . " 400 Bad Request");            
-    // echo file_get_contents('php://input');
     exit;
 }
 
-// print_r($content);
+// $_POST = json_decode(
+//                   '{"gameDateTime":"2022-09-13 13:09:48","gameLevel":3,"fieldName":"Brainbox","fieldLocation":"Talisman"}',
+//                   true,
+//                   2,
+//                   JSON_THROW_ON_ERROR
+//               );
 
 require("class/DbConnection.php");
 
@@ -28,15 +32,22 @@ $db = DbConnection::getConnection();
 // Step 2: Create & run the query
 // Note the use of parameterized statements to avoid injection
 $stmt = $db->prepare(
-  'insert into Games (gameLevel, fieldID, gameDateTime)
-  values (?, (SELECT fieldID FROM `Fields` WHERE fieldName = ? AND fieldLocation = ?), ?);'
+  "INSERT INTO Games (gameLevel, fieldID, gameDateTime)
+  VALUES (?, (SELECT fieldID FROM `Fields` WHERE fieldName = ? AND fieldLocation = ?), ?)"
 );
+
+// $stmt->execute([
+//   3,
+//   'Brainbox',
+//   'Talis',
+//   date ('Y-m-d H:i:s', strtotime('2022-09-13 13:09:48'))
+// ]);
 
 $stmt->execute([
   $_POST['gameLevel'],
   $_POST['fieldName'],
   $_POST['fieldLocation'],
-  date ('Y-m-d H:i:s', $_POST['gameDateTime'])
+  date ('Y-m-d H:i:s', strtotime($_POST['gameDateTime']))
 ]);
 
 // Get auto-generated PK from DB
@@ -46,5 +57,5 @@ $stmt->execute([
 // Step 4: Output
 // Here, instead of giving output, I'm redirecting to the SELECT API,
 // just in case the data changed by entering it
-header('HTTP/1.1 303 See Other');
-header('Location: ../games/games.php');
+// header('HTTP/1.1 303 See Other');
+// header('Location: ../games/games.php');

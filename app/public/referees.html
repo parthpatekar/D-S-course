@@ -62,7 +62,7 @@
                                 </th>
                             </thead>
                             <tbody>
-                              <tr v-for="referee in refereeList">
+                              <tr v-for="referee in refereesList">
                                 <td>
                                     <span v-if="referee.editmode"><input v-model="referee.refereeFirstName" placeholder="First Name"></span>
                                     <span v-else> {{ referee.refereeFirstName }} </span>
