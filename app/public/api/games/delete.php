@@ -1,6 +1,6 @@
 <?php
 
-try {  
+try {
     $_POST = json_decode(
                 file_get_contents('php://input'), 
                 true,
@@ -9,6 +9,7 @@ try {
             );
 } catch (Exception $e) {
     header($_SERVER["SERVER_PROTOCOL"] . " 400 Bad Request");    
+    // echo file_get_contents('php://input');
     exit;
 }
 
@@ -24,21 +25,12 @@ $db = DbConnection::getConnection();
 // Step 2: Create & run the query
 // Note the use of parameterized statements to avoid injection
 $stmt = $db->prepare(
-  'UPDATE Referees SET 
-    refereeFirstName = ?,
-    refereeLastName = ?,
-    refereeAge = ?,
-    refereeGrade = ?
-  WHERE refereeID = ?'
+  'DELETE FROM Games WHERE gameID = ?;'
 );
 
-if($stmt->execute([
-  $_POST['refereeFirstName'],
-  $_POST['refereeLastName'],
-  $_POST['refereeAge'],
-  $_POST['refereeGrade'],
-  $_POST['refereeID']
-]))
+$stmt->execute([
+  $_POST['gameID']
+]);
 
 // Get auto-generated PK from DB
 // https://www.php.net/manual/en/pdo.lastinsertid.php
@@ -48,5 +40,4 @@ if($stmt->execute([
 // Here, instead of giving output, I'm redirecting to the SELECT API,
 // just in case the data changed by entering it
 // header('HTTP/1.1 303 See Other');
-// header('HTTP/1.1 303 See Other');
-// header('Location: ../referees/referees.php');
+// header('Location: ../games/games.php');

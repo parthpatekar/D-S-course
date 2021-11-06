@@ -6,15 +6,15 @@ require 'class/DbConnection.php';
 $db = DbConnection::getConnection();
 
 // Step 2: Create & run the query
-$query = 'SELECT * FROM Referees';
+$query = "SELECT gameID, gameDateTime, gameLevel, fieldName, fieldLocation FROM Games JOIN `Fields` ON Games.fieldID = `Fields`.fieldID ORDER BY gameDateTime";
 $vars = [];
 $stmt = $db->prepare($query);
 $stmt->execute($vars);
 
-$referees = $stmt->fetchAll();
+$games = $stmt->fetchAll();
 
 // Step 3: Convert to JSON
-$json = json_encode($referees, JSON_PRETTY_PRINT);
+$json = json_encode($games, JSON_PRETTY_PRINT);
 
 // Step 4: Output
 header('Content-Type: application/json');
