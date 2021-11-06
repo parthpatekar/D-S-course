@@ -1,13 +1,62 @@
 const App = {
+    // components: { VueSelect },
+    // setup() {
+    //     const modelValue = ref([])
+    //     // options must includes modelValue, otherwise vue-next-select will remove those modelValue
+    //     const options = computed(() => [...new Set([...visibleOptions.value].concat(modelValue.value))])
+    //     const visibleOptions = ref<string[]>([])
+
+    //     const latestTimestamp = ref()
+    //     const loading = ref(false)
+    //     async function handleInput(inputEvent: InputEvent) {
+    //     const timestamp = (latestTimestamp.value = Date.now())
+    //     const target = inputEvent.target as HTMLInputElement | null
+
+    //     if (target?.value === '') {
+    //         visibleOptions.value = [...modelValue.value]
+    //         return
+    //     }
+
+    //     loading.value = true
+    //     await new Promise(resolve => setTimeout(resolve, 500))
+    //     if (timestamp === latestTimestamp.value) {
+    //         visibleOptions.value = userNames.value.filter(name => name.includes(target?.value!))
+    //     }
+    //     loading.value = false
+    //     }
+
+    //     return {
+    //     modelValue,
+    //     options,
+    //     visibleOptions,
+    //     loading,
+    //     handleInput,
+    //     }
+    // },
     data() {
         return {
             refereesList: [],
             gamesList: [],
             newForm: {},
-            updateForm: {}
+            updateForm: {},
+
+            options: [
+                "Cat",
+                "Dog",
+                "Elephant",
+                "Girafe",
+                "Snake",
+                "Spider",
+                "Unicorn"
+            ],
+          
+            selected: null
         }
     },
-    methods: {
+    methods: {      
+        nameWithLang ({ name, language }) {
+            return `${name} — [${language}]`
+        },
         fetchRefereesList() {
             fetch('/api/referees/referees.php')
             .then( response => response.json() )

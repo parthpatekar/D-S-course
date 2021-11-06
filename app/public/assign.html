@@ -19,6 +19,10 @@
         crossorigin="anonymous"></script>
     <!-- VueJs Script-->
     <script src="https://unpkg.com/vue@next"></script>
+    <link type="text/css" rel="stylesheet" href="https://unpkg.com/vue-next-select/dist/index.min.css" />
+
+    <!-- import script -->
+    <script src="https://unpkg.com/vue-next-select/dist/vue-next-select.iife.prod.js"></script>
 </head>
 
 <body class="main-page-bg">
@@ -29,20 +33,29 @@
         
         <nav class="d-flex justify-content-right py-3 mb-4 border-bottom">
             <ul class="nav nav-pills">
-                <li class="nav-item"><a href="index.html" class="nav-link active" aria-current="page">Home</a></li>
+                <li class="nav-item"><a href="index.html" class="nav-link" aria-current="page">Home</a></li>
                 <li class="nav-item"><a href="referees.html" class="nav-link">Referees</a></li>
                 <li class="nav-item"><a href="games.html" class="nav-link">Games</a></li>
-                <li class="nav-item"><a href="assign.html" class="nav-link">Assign</a></li>
+                <li class="nav-item"><a href="assign.html" class="nav-link active">Assign</a></li>
             </ul>
         </nav>
 
         <main>
             <div class="row">
                 <div class="col-lg-12">
-                    <h1 class="welcome-message d-flex justify-content-center position-absolute top-50 start-50 translate-middle text-center">
-                        <span class="text-background">Welcome
-                        to
-                        Team-15's Referee Database!</span></h1>
+                    <div id="app">
+                        <vue-select
+                            v-model="modelValue"
+                            :options="options"
+                            :visible-options="visibleOptions"
+                            searchable
+                            multiple
+                            clear-on-close
+                            :loading="loading"
+                            @search:input="handleInput"
+                            search-placeholder="Select user"
+                        />
+                    </div>                    
                 </div>
             </div>
         </main>
@@ -51,6 +64,7 @@
 
         </footer>      
     </div>
+    <script src="js/app.js"></script>
 </body>
 
 </html>
