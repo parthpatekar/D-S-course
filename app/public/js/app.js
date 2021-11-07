@@ -7,6 +7,7 @@ const App = {
             newForm: {},
             updateForm: {},
             dateform:{},
+            assList:[],
 
             showAssignmentTable: false,
         }
@@ -32,6 +33,17 @@ const App = {
             .catch( (err) => {
                 console.error(err);
             })
+        },
+        displayUnassigned() {
+            fetch('/api/assignments/refassign.php')
+            .then( response => response.json() )
+            .then( (responseJson) => {                
+                this.assList = responseJson;                
+            })
+            .catch( (err) => {
+                console.error(err);
+            })
+
         },
         fetchRefereesList() {
             fetch('/api/referees/referees.php')
@@ -142,6 +154,7 @@ const App = {
     created() {
         this.fetchRefereesList();
         this.fetchGamesList();
+        this.displayUnassigned();
     }
 }
 
