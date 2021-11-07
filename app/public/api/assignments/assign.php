@@ -19,7 +19,7 @@ $db = DbConnection::getConnection();
 
 // Step 2: Create & run the query
 $query = 'SELECT Assignments.assignmentID, Assignments.assignmentStatus, Assignments.gameID, 
-Referees.refereeFirstName,Referees.refereeLastName, t1.teamName, t2.teamName 
+Referees.refereeFirstName,Referees.refereeLastName, t1.teamName as team1Name, t2.teamName as team2Name
 FROM Assignments 
 join Referees 
 ON Assignments.refereeID = Referees.refereeID 
@@ -30,8 +30,7 @@ ON Games.team1 = t1.teamID
 Join Teams t2
 ON Games.team2 = t2.teamID 
 Where gameDate between STR_TO_DATE(? , "%Y-%m-%d") and STR_TO_DATE(?, "%Y-%m-%d")
-ORDER BY refereeFirstName
-';
+ORDER BY refereeFirstName';
 // $query = 'SELECT * From Assignments';
 // $vars = [];
 $stmt = $db->prepare($query);

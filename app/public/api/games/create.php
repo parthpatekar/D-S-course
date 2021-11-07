@@ -12,13 +12,6 @@ try {
     exit;
 }
 
-// $_POST = json_decode(
-//                   '{"gameDateTime":"2022-09-13 13:09:48","gameLevel":3,"fieldName":"Brainbox","fieldLocation":"Talisman"}',
-//                   true,
-//                   2,
-//                   JSON_THROW_ON_ERROR
-//               );
-
 require("class/DbConnection.php");
 
 
@@ -36,12 +29,6 @@ $stmt = $db->prepare(
   VALUES (?, (SELECT fieldID FROM `Fields` WHERE fieldName = ? AND fieldLocation = ?), ?)"
 );
 
-// $stmt->execute([
-//   3,
-//   'Brainbox',
-//   'Talis',
-//   date ('Y-m-d H:i:s', strtotime('2022-09-13 13:09:48'))
-// ]);
 
 $stmt->execute([
   $_POST['gameLevel'],

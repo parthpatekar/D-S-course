@@ -1,38 +1,4 @@
 const App = {
-    // components: { VueSelect },
-    // setup() {
-    //     const modelValue = ref([])
-    //     // options must includes modelValue, otherwise vue-next-select will remove those modelValue
-    //     const options = computed(() => [...new Set([...visibleOptions.value].concat(modelValue.value))])
-    //     const visibleOptions = ref<string[]>([])
-
-    //     const latestTimestamp = ref()
-    //     const loading = ref(false)
-    //     async function handleInput(inputEvent: InputEvent) {
-    //     const timestamp = (latestTimestamp.value = Date.now())
-    //     const target = inputEvent.target as HTMLInputElement | null
-
-    //     if (target?.value === '') {
-    //         visibleOptions.value = [...modelValue.value]
-    //         return
-    //     }
-
-    //     loading.value = true
-    //     await new Promise(resolve => setTimeout(resolve, 500))
-    //     if (timestamp === latestTimestamp.value) {
-    //         visibleOptions.value = userNames.value.filter(name => name.includes(target?.value!))
-    //     }
-    //     loading.value = false
-    //     }
-
-    //     return {
-    //     modelValue,
-    //     options,
-    //     visibleOptions,
-    //     loading,
-    //     handleInput,
-    //     }
-    // },
     data() {
         return {
             refereesList: [],
@@ -41,26 +7,15 @@ const App = {
             newForm: {},
             updateForm: {},
             dateform:{},
-            // startdate: "",
-            // enddate: "",
-            options: [
-                "Cat",
-                "Dog",
-                "Elephant",
-                "Girafe",
-                "Snake",
-                "Spider",
-                "Unicorn"
-            ],
-          
-            selected: null
+
+            showAssignmentTable: false
         }
     },
     methods: {      
         nameWithLang ({ name, language }) {
             return `${name} — [${language}]`
         },
-        display(evt) {
+        displayAssignments(event) {
             fetch('/api/assignments/assign.php', {
                 method:'POST',
                 body: JSON.stringify(this.dateform),
@@ -70,8 +25,8 @@ const App = {
             })
             .then( response => response.json() )
             .then( (responseJson) => {                
-                this.assignList = responseJson; 
-                console.log(this.assignList);               
+                this.assignList = responseJson;
+                this.showAssignmentTable = true;
             })
             .catch( (err) => {
                 console.error(err);
