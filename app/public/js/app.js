@@ -36,10 +36,13 @@ const App = {
     data() {
         return {
             refereesList: [],
+            assignList:[],
             gamesList: [],
             newForm: {},
             updateForm: {},
-
+            dateform:{},
+            // startdate: "",
+            // enddate: "",
             options: [
                 "Cat",
                 "Dog",
@@ -56,6 +59,23 @@ const App = {
     methods: {      
         nameWithLang ({ name, language }) {
             return `${name} — [${language}]`
+        },
+        display(evt) {
+            fetch('/api/assignments/assign.php', {
+                method:'POST',
+                body: JSON.stringify(this.dateform),
+                headers: {
+                  "Content-Type": "application/json; charset=utf-8"
+                }
+            })
+            .then( response => response.json() )
+            .then( (responseJson) => {                
+                this.assignList = responseJson; 
+                console.log(this.assignList);               
+            })
+            .catch( (err) => {
+                console.error(err);
+            })
         },
         fetchRefereesList() {
             fetch('/api/referees/referees.php')

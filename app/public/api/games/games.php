@@ -6,7 +6,7 @@ require 'class/DbConnection.php';
 $db = DbConnection::getConnection();
 
 // Step 2: Create & run the query
-$query = "SELECT gameID, gameDateTime, gameLevel, fieldName, fieldLocation FROM Games JOIN `Fields` ON Games.fieldID = `Fields`.fieldID ORDER BY gameDateTime";
+$query = "SELECT gameID, gameDate, gameLevel, fieldName, fieldLocation FROM Games JOIN `Fields` ON Games.fieldID = `Fields`.fieldID ORDER BY gameDate";
 $vars = [];
 $stmt = $db->prepare($query);
 $stmt->execute($vars);

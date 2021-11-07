@@ -1,11 +1,13 @@
+
 CREATE DATABASE IF NOT EXISTS msisdb;
 USE msisdb;
 
 SET FOREIGN_KEY_CHECKS = 0;
--- DROP TABLE IF EXISTS Referees;
--- DROP TABLE IF EXISTS Assignments;
--- DROP TABLE IF EXISTS Games;
--- DROP TABLE IF EXISTS `Fields`;
+DROP TABLE IF EXISTS Referees;
+DROP TABLE IF EXISTS Assignments;
+DROP TABLE IF EXISTS `Fields`;
+DROP TABLE IF EXISTS Teams;
+DROP TABLE IF EXISTS Games;
 -- SET FOREIGN_KEY_CHECKS = 1;
 
 CREATE TABLE IF NOT EXISTS Referees (
@@ -21,30 +23,45 @@ CREATE TABLE IF NOT EXISTS `Fields` (
     fieldName varchar(255),
     fieldLocation varchar(255)
 );
-
-CREATE TABLE IF NOT EXISTS Games (
-    gameID INT NOT NULL AUTO_INCREMENT primary key,
-    gameLevel int,
-    gameDateTime DateTime,
-    fieldID int,
-    FOREIGN KEY (fieldID) REFERENCES `Fields`(fieldID) ON UPDATE CASCADE
-);
 CREATE TABLE IF NOT EXISTS Teams (
 	teamID INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
 	teamName VARCHAR(50),
 	clubName VARCHAR(50),
-	manager VARCHAR(50),
+	manager VARCHAR(50)
+);
+CREATE TABLE IF NOT EXISTS Games (
+    gameID INT NOT NULL AUTO_INCREMENT primary key,
+    gameLevel int,
+    gameDate DateTime,
+    fieldID int,
+    team1 int, 
+    team2 int,
+    FOREIGN KEY (fieldID) REFERENCES `Fields`(fieldID)  ,
+	FOREIGN KEY (team1) REFERENCES Teams(teamID),
+    FOREIGN KEY (team2) REFERENCES Teams(teamID)
 );
 CREATE TABLE IF NOT EXISTS Assignments (
     assignmentID INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
     assignmentStatus varchar(255) NOT NULL,
     refereeID int,
     gameID int,
-    FOREIGN KEY (refereeID) REFERENCES Referees(refereeID) ON UPDATE CASCADE,
-    FOREIGN KEY (gameID) REFERENCES Games(gameID) ON UPDATE CASCADE,
-
+    FOREIGN KEY (refereeID) REFERENCES Referees(refereeID),
+    FOREIGN KEY (gameID) REFERENCES Games(gameID)
 );
+insert into
+    Referees (refereeID, refereeFirstName, refereeLastName, refereeAge, refereeGrade)
+values
+    (1, 'Freddy', 'Daw', 30, 5);
 
+insert into
+    Referees (refereeID, refereeFirstName, refereeLastName, refereeAge, refereeGrade)
+values
+    (2, 'Morgan', 'Downer', 36, 2);
+
+insert into
+    Referees (refereeID, refereeFirstName, refereeLastName, refereeAge, refereeGrade)
+values
+    (3, 'Waylan', 'McCuish', 34, 3);
 
 insert into
     `Fields` (fieldID, fieldName, fieldLocation)
@@ -67,10 +84,10 @@ insert into Teams (teamID, teamName, clubName, manager) values (3, 'Cows', 'Acad
 insert into Teams (teamID, teamName, clubName, manager) values (4, 'Bulls', 'Fachhochschule Koblenz', 'Nolana Snalham');
 
 
-insert into Games (gameID, gameLevel, fieldID, gameDate, team1, team2) values (1, 5, 4, '12/04/2021', 1, 2);
-insert into Games (gameID, gameLevel, fieldID, gameDate, team1, team2) values (2, 4, 5, '08/13/2022',2 ,3);
-insert into Games (gameID, gameLevel, fieldID, gameDate, team1, team2) values (3, 1, 9, '02/08/2022',1, 4);
+insert into Games (gameID, gameLevel, fieldID, gameDate, team1, team2) values (1, 5, 4, '2021-11-10', 1, 2);
+insert into Games (gameID, gameLevel, fieldID, gameDate, team1, team2) values (2, 4, 5, '2021-11-22',2 ,3);
+insert into Games (gameID, gameLevel, fieldID, gameDate, team1, team2) values (3, 1, 9, '2021-12-10',1, 4);
 
-insert into Assignments (assignmentID, assignmentStatus, refereeID, gamesID) values (1, 'Assigned', 1, 1);
-insert into Assignments (assignmentID, assignmentStatus, refereeID, gamesID) values (2, 'Accepted', 2, 1);
-insert into Assignments (assignmentID, assignmentStatus, refereeID, gamesID) values (3, 'Unassigned', 3, 3);
+insert into Assignments (assignmentID, assignmentStatus, refereeID, gameID) values (1, 'Assigned', 1, 1);
+insert into Assignments (assignmentID, assignmentStatus, refereeID, gameID) values (2, 'Accepted', 2, 1);
+insert into Assignments (assignmentID, assignmentStatus, refereeID, gameID) values (3, 'Unassigned', 3, 3);
