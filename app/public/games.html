@@ -75,7 +75,7 @@
                                     <span v-if="game.editmode">
                                       <input v-model="game.gameDate" type="date" class="form-control" placeholder="Date">
                                     </span>
-                                    <span v-else> {{ game.gameDate.slice(0, 10) }} </span>
+                                    <span v-else> {{ game.gameDate }} </span>
                                 </td>
                                 <td>
                                   <span v-if="game.editmode"><input v-model="game.gameLevel" class="form-control" placeholder="Level"></span>

@@ -26,8 +26,8 @@ $db = DbConnection::getConnection();
 $stmt = $db->prepare(
   ' UPDATE Games 
     SET 
-        gameDate = STR_TO_DATE(?, "%Y-%m-%d"),
         gameLevel = ?,
+        gameDate = ?,        
         fieldID = (
             SELECT fieldID 
             FROM `Fields` 
@@ -49,15 +49,15 @@ $stmt = $db->prepare(
     WHERE gameID = ?'
 );
 
-if($stmt->execute([
-  $_POST['gameDate'],
+$stmt->execute([
   $_POST['gameLevel'],
+  $_POST['gameDate'],  
   $_POST['fieldName'],
   $_POST['fieldLocation'],  
   $_POST['team1Name'],
   $_POST['team2Name'],
   $_POST['gameID']
-]))
+]);
 
 // Get auto-generated PK from DB
 // https://www.php.net/manual/en/pdo.lastinsertid.php

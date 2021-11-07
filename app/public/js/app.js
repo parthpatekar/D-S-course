@@ -52,10 +52,7 @@ const App = {
                 console.error(err);
             })
         },
-        edit(entity, entityType){
-            if(entityType == 'game'){
-                entity.gameDate = entity.gameDate.slice(0, 10);
-            }                        
+        edit(entity, entityType){           
             entity.editmode = true;
         },
         cancelEdit(entity, entityType){

@@ -42,7 +42,7 @@ $stmt = $db->prepare(
                 AND 
                 fieldLocation = ?
         ), 
-        STR_TO_DATE(?, '%Y-%m-%d'), 
+        ?, 
         (
             SELECT teamID 
             FROM Teams 
@@ -61,7 +61,7 @@ $stmt->execute([
   $_POST['gameLevel'],
   $_POST['fieldName'],
   $_POST['fieldLocation'],
-  date ('Y-m-d', strtotime($_POST['gameDate']))
+  $_POST['gameDate'],
   $_POST['team1Name'],
   $_POST['team2Name']
 ]);
