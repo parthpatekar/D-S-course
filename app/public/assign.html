@@ -58,11 +58,22 @@
                                 <form id="assignments-form" v-on:submit.prevent="display">
                                     <p>Start Date: <input type="date" v-model="dateform.startdate" name="fromdate" required></p>
                                     <p>End Date: <input type="date" v-model="dateform.enddate" name="todate" required></p>
-                                    <input type='submit' value ='View Assignments'><br>
+                                    <div class="dropdown">
+                                            <button onclick="myFunction()" class="dropbtn">Select a Referee</button>
+                                            <div id="myDropdown" class="dropdown-content">
+                                              <input type="text" placeholder="Search By Referee Name" id="myInput" v-model="dateform.selectedref" onkeyup="filterFunction()">
+                                              <div v-for='referee in refereesList'>
+                                              <a>{{referee.refereeFirstName}}</a>
+                                              </div>
+                                            </div>
+                                          </div>
+
+                                          <br><input type='submit' value ='View Assignments'><br>
                                 </form>
                                 <div v-for='assign in assignList'>
                                     {{assign}}
                                 </div>
+
                         </main>
                     </div>                    
                 </div>
@@ -73,6 +84,7 @@
         </footer>      
     </div>
     <script src="js/app.js"></script>
+    <script src="js/dropdown.js"></script>
 </body>
 
 </html>
