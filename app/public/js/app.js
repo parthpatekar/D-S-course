@@ -26,6 +26,7 @@ const App = {
             .then( response => response.json() )
             .then( (responseJson) => {                
                 this.assignList = responseJson;
+                // console.log(assignList);
                 this.showAssignmentTable = true;
             })
             .catch( (err) => {

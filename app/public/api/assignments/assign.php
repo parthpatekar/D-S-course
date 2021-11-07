@@ -29,14 +29,15 @@ JOIN Teams t1
 ON Games.team1 = t1.teamID 
 JOIN Teams t2
 ON Games.team2 = t2.teamID 
-WHERE gameDate BETWEEN STR_TO_DATE(? , "%Y-%m-%d") AND STR_TO_DATE(? , "%Y-%m-%d")
+WHERE gameDate BETWEEN STR_TO_DATE(? , "%Y-%m-%d") AND STR_TO_DATE(? , "%Y-%m-%d") and Referees.refereeID = ?
 ORDER BY refereeFirstName';
 // $query = 'SELECT * From Assignments';
 // $vars = [];
 $stmt = $db->prepare($query);
 $stmt->execute([
     date('Y-m-d', strtotime($_POST['startdate'])),
-    date('Y-m-d', strtotime($_POST['enddate']))
+    date('Y-m-d', strtotime($_POST['enddate'])),
+    $_POST['refereeID']
 ]);
 $referees = $stmt->fetchAll();
 
