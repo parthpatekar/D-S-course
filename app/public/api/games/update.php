@@ -24,20 +24,39 @@ $db = DbConnection::getConnection();
 // Step 2: Create & run the query
 // Note the use of parameterized statements to avoid injection
 $stmt = $db->prepare(
-  'UPDATE Games SET 
-    gameDateTime = ?,
-    gameLevel = ?,
-    fieldName = ?,
-    fieldLocation = ?
-  WHERE gameID = ?'
+  ' UPDATE Games 
+    SET 
+        gameDate = STR_TO_DATE(?, "%Y-%m-%d"),
+        gameLevel = ?,
+        fieldID = (
+            SELECT fieldID 
+            FROM `Fields` 
+            WHERE 
+                fieldName = ? 
+                AND 
+                fieldLocation = ?
+        ),
+        team1 = (
+            SELECT teamID 
+            FROM Teams 
+            WHERE teamName = ?
+        ),
+        team2 = (
+            SELECT teamID 
+            FROM Teams 
+            WHERE teamName = ?
+        )
+    WHERE gameID = ?'
 );
 
 if($stmt->execute([
-  $_POST['gameDateTime'],
+  $_POST['gameDate'],
   $_POST['gameLevel'],
   $_POST['fieldName'],
-  $_POST['fieldLocation'],
-  $_POST['gameID'],
+  $_POST['fieldLocation'],  
+  $_POST['team1Name'],
+  $_POST['team2Name'],
+  $_POST['gameID']
 ]))
 
 // Get auto-generated PK from DB

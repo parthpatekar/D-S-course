@@ -25,8 +25,35 @@ $db = DbConnection::getConnection();
 // Step 2: Create & run the query
 // Note the use of parameterized statements to avoid injection
 $stmt = $db->prepare(
-  "INSERT INTO Games (gameLevel, fieldID, gameDateTime)
-  VALUES (?, (SELECT fieldID FROM `Fields` WHERE fieldName = ? AND fieldLocation = ?), ?)"
+    "INSERT INTO Games (
+        gameLevel, 
+        fieldID, 
+        gameDate, 
+        team1, 
+        team2
+    )
+    VALUES (
+        ?, 
+        (
+            SELECT fieldID 
+            FROM `Fields` 
+            WHERE 
+                fieldName = ? 
+                AND 
+                fieldLocation = ?
+        ), 
+        STR_TO_DATE(?, '%Y-%m-%d'), 
+        (
+            SELECT teamID 
+            FROM Teams 
+            WHERE teamName = ?
+        ), 
+        (
+            SELECT teamID 
+            FROM Teams 
+            WHERE teamName = ?
+        )
+    )"
 );
 
 
@@ -34,7 +61,9 @@ $stmt->execute([
   $_POST['gameLevel'],
   $_POST['fieldName'],
   $_POST['fieldLocation'],
-  date ('Y-m-d H:i:s', strtotime($_POST['gameDateTime']))
+  date ('Y-m-d', strtotime($_POST['gameDate']))
+  $_POST['team1Name'],
+  $_POST['team2Name']
 ]);
 
 // Get auto-generated PK from DB

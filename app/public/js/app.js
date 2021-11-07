@@ -8,7 +8,7 @@ const App = {
             updateForm: {},
             dateform:{},
 
-            showAssignmentTable: false
+            showAssignmentTable: false,
         }
     },
     methods: {      
@@ -52,8 +52,11 @@ const App = {
                 console.error(err);
             })
         },
-        edit(entity){
-            entity.editmode = true;            
+        edit(entity, entityType){
+            if(entityType == 'game'){
+                entity.gameDate = entity.gameDate.slice(0, 10);
+            }                        
+            entity.editmode = true;
         },
         cancelEdit(entity, entityType){
             entity.editmode = false;

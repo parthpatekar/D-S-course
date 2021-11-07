@@ -65,27 +65,32 @@
                             <tbody>
                               <tr v-for="game in gamesList">
                                 <td>
-                                    <!-- <span v-if="game.editmode"><input v-model="game.gameFirstName" placeholder="First Name"></span>
-                                    <span v-else> {{ game.gameLevel }} </span> -->
+                                    <span v-if="game.editmode">
+                                      <input type="text" class="form-control" v-model="game.team1Name" placeholder="Team-1 Name">
+                                      <input type="text" class="form-control" v-model="game.team2Name" placeholder="Team-2 Name">
+                                    </span>
+                                    <span v-else> {{ game.team1Name + " vs " + game.team2Name }} </span>
                                 </td>
                                 <td>
-                                    <span v-if="game.editmode"><input v-model="game.gameDateTime" placeholder="Date & Time"></span>
-                                    <span v-else> {{ game.gameDateTime }} </span>
+                                    <span v-if="game.editmode">
+                                      <input v-model="game.gameDate" type="date" class="form-control" placeholder="Date">
+                                    </span>
+                                    <span v-else> {{ game.gameDate.slice(0, 10) }} </span>
                                 </td>
                                 <td>
-                                  <span v-if="game.editmode"><input v-model="game.gameLevel" placeholder="Level"></span>
+                                  <span v-if="game.editmode"><input v-model="game.gameLevel" class="form-control" placeholder="Level"></span>
                                   <span v-else> {{ game.gameLevel }} </span>
                                 </td>
                                 <td>
                                     <span v-if="game.editmode">
-                                        <input v-model="game.fieldName" placeholder="Field Name">
-                                        <input v-model="game.fieldLocation" placeholder="Field Location">
+                                        <input v-model="game.fieldName" class="form-control" placeholder="Field Name">
+                                        <input v-model="game.fieldLocation" class="form-control" placeholder="Field Location">
                                     </span>
                                     <span v-else> {{ game.fieldName + ", " + game.fieldLocation }} </span>
                                 </td>
                                 <td>
                                     <span v-if="!game.editmode">
-                                      <button name="update" v-on:click="edit(game)" class="btn btn-primary btn-sm">
+                                      <button name="update" v-on:click="edit(game, 'game')" class="btn btn-primary btn-sm">
                                         <i class="bi-pencil-square"></i>
                                       </button>
                                     </span>
@@ -110,19 +115,20 @@
                               </tr>                
                               <tr>                  
                                 <td>
-
-                                </td>
-                                <td>
                                   <form id="new-game-form" v-on:submit.prevent="addNew($event, 'game')">
-                                    <input type="text" v-model="newForm.gameDateTime" placeholder="Date & Time">
+                                    <input type="text" class="form-control" v-model="newForm.team1Name" placeholder="Team-1 Name">
+                                    <input type="text" class="form-control" v-model="newForm.team2Name" placeholder="Team-2 Name">
                                   </form>
                                 </td>
-                                <td>
-                                    <input form="new-game-form" type="number" min="1" max="4" v-model="newForm.gameLevel" placeholder="Game Level">
+                                <td>                                  
+                                    <input form="new-game-form" type="text" class="form-control" placeholder="Date" onfocus="(this.type='date')" onblur="(this.type='text')" v-model="newForm.gameDate" id="todate" required>
                                 </td>
                                 <td>
-                                    <input form="new-game-form" type="text" v-model="newForm.fieldName" placeholder="Field Name">
-                                    <input form="new-game-form" type="text" v-model="newForm.fieldLocation" placeholder="Field Location">
+                                    <input form="new-game-form" type="number" class="form-control" min="1" max="4" v-model="newForm.gameLevel" placeholder="Game Level">
+                                </td>
+                                <td>
+                                    <input form="new-game-form" type="text" class="form-control" v-model="newForm.fieldName" placeholder="Field Name">
+                                    <input form="new-game-form" type="text" class="form-control" v-model="newForm.fieldLocation" placeholder="Field Location">
                                 </td>
                                 <td>
                                     <button form="new-game-form" type="submit" name="add" class="btn btn-success btn-sm">
