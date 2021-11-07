@@ -4,6 +4,7 @@ const App = {
             refereesList: [],
             assignList:[],
             gamesList: [],
+            manageAssignmentsList: [],
             newForm: {},
             updateForm: {},
             dateform:{},
@@ -52,6 +53,16 @@ const App = {
                 console.error(err);
             })
         },
+        fetchAssignmentsList() {
+            fetch('/api/manageAssignments/manageAssignments.php')
+            .then( response => response.json() )
+            .then( (responseJson) => {                
+                this.manageAssignmentsList = responseJson;                
+            })
+            .catch( (err) => {
+                console.error(err);
+            })
+        },
         edit(entity, entityType){           
             entity.editmode = true;
         },
@@ -70,6 +81,8 @@ const App = {
                 var request = 'api/referees/update.php';
             else if(entityType == 'game')
                 var request = 'api/games/update.php';
+            else if(entityType == 'assignment')
+                var request = 'api/manageAssignments/update.php';
             
             fetch(request, {
                 method:'POST',
@@ -91,8 +104,9 @@ const App = {
                 var request = '/api/referees/create.php';
             else if(entityType == 'game')
                 var request = '/api/games/create.php';
+            else if(entityType == 'assignment')
+                var request = '/api/manageAssignments/create.php';
 
-            console.log(JSON.stringify(this.newForm));
             fetch(request, {
                 method: "POST",
                 body: JSON.stringify(this.newForm),
@@ -105,6 +119,8 @@ const App = {
                     this.fetchRefereesList();
                 else if(entityType == 'game')
                     this.fetchGamesList();
+                else if(entityType == 'assignment')
+                    this.fetchAssignmentsList();
                 this.newForm = {};
             });
         },
@@ -112,7 +128,9 @@ const App = {
             if(entityType == 'referee')
                 var message = "Are you sure you want to delete the referee, " + entity.refereeFirstName + " " + entity.refereeLastName + "?";
             else if(entityType == 'game')
-                var message = "Are you sure you want to delete the game, " + " " + entity.gameLocation + "?";
+                var message = "Are you sure you want to delete the game, " + entity.gameLocation + "?";
+            else if(entityType == 'assignment')
+                var message = "Are you sure you want to delete the assignment for gameID = " + entity.gameID + "?";
 
             if (!confirm(message)) {
                 return ;
@@ -122,6 +140,8 @@ const App = {
                 var request = 'api/referees/delete.php';
             else if(entityType == 'game')
                 var request = 'api/games/delete.php';
+            else if(entityType == 'assignment')
+                var request = 'api/manageAssignments/delete.php';
             
             fetch(request, {
                 method:'POST',
@@ -135,12 +155,15 @@ const App = {
                     this.fetchRefereesList();
                 else if(entityType == 'game')
                     this.fetchGamesList();
+                else if(entityType == 'assignment')
+                    this.fetchAssignmentsList();
             });            
         }
     },
     created() {
         this.fetchRefereesList();
         this.fetchGamesList();
+        this.fetchAssignmentsList();
     }
 }
 
