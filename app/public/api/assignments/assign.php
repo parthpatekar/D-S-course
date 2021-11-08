@@ -51,7 +51,8 @@ $query = '  SELECT
 $stmt = $db->prepare($query);
 $stmt->execute([
     date('Y-m-d', strtotime($_POST['startdate'])),
-    date('Y-m-d', strtotime($_POST['enddate']))
+    date('Y-m-d', strtotime($_POST['enddate'])),
+    $_POST['refereeID']
 ]);
 $referees = $stmt->fetchAll();
 

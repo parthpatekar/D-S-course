@@ -9,6 +9,7 @@ const App = {
             updateForm: {},
             dateform:{},
             csv: "",
+            assList:[],
 
             showAssignmentTable: false,
         }
@@ -28,11 +29,23 @@ const App = {
             .then( response => response.json() )
             .then( (responseJson) => {                
                 this.assignList = responseJson;
+                // console.log(assignList);
                 this.showAssignmentTable = true;
             })
             .catch( (err) => {
                 console.error(err);
             })
+        },
+        displayUnassigned() {
+            fetch('/api/assignments/refassign.php')
+            .then( response => response.json() )
+            .then( (responseJson) => {                
+                this.assList = responseJson;                
+            })
+            .catch( (err) => {
+                console.error(err);
+            })
+
         },
         fetchRefereesList() {
             fetch('/api/referees/referees.php')
@@ -181,6 +194,7 @@ const App = {
         this.fetchRefereesList();
         this.fetchGamesList();
         this.fetchAssignmentsList();
+        this.displayUnassigned();
     }
 }
 
