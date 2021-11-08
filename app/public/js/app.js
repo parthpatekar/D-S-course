@@ -29,7 +29,7 @@ const App = {
             .then( response => response.json() )
             .then( (responseJson) => {                
                 this.assignList = responseJson;
-                // console.log(assignList);
+                console.log(this.assignList);
                 this.showAssignmentTable = true;
             })
             .catch( (err) => {
