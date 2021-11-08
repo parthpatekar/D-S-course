@@ -66,15 +66,20 @@
                                         onblur="(this.type='text')" class="form-control" v-model="dateform.enddate"
                                         id="todate" required>
                                 </div>
-                                <div class="col">
+                                <!-- <div class="col">
                                 <input form="assignments-form" type="number" min="1" v-model="dateform.refereeID" class="form-control" placeholder="Referee ID">
 
+                                </div> -->
+                                <div class="col">
+                                        <!-- <label for="offerStatus" class="form-label">Referee<span class="reqd">*</span></label> -->
+                                        <select id="offerStatus" v-model="dateform.refereeID" class="form-control">
+                                          <option v-for="referee in refereesList" :value="referee.refereeID">{{referee.refereeFirstName}}</option>
+                                        </select>
+                            
                                 </div>
                                 <div class="col">
                                     <button id="view" type="submit" class="btn btn-primary">View Assignments</button>
                                 </div>
-                                <div class="col"></div>
-                                <div class="col"></div>
                                 <div class="col"></div>
                             </div>
                         </form>
