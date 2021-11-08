@@ -198,7 +198,11 @@
                                 </td>
                               </tr>               
                             </tbody>
-                          </table>
+                        </table>
+
+                        <button v-on:click="convert2CSV($event, manageAssignmentsList, 'assignment')" name="" class="btn btn-success btn-sm">
+                            <i class="bi-download">  Export to CSV</i>
+                        </button>
                     </div>
                 </div>
             </div>

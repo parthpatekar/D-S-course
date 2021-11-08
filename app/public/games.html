@@ -45,6 +45,9 @@
                         <table id="games-table" class="table">
                             <thead>
                                 <th>
+                                    Game ID
+                                </th>
+                                <th>
                                     Teams
                                 </th>
                                 <th>
@@ -65,6 +68,9 @@
                             </thead>
                             <tbody>
                               <tr v-for="game in gamesList">
+                                <td>
+                                    <span> {{ game.gameID }} </span>
+                                </td>
                                 <td>
                                     <span v-if="game.editmode">
                                       <input type="text" class="form-control" v-model="game.team1Name" placeholder="Team-1 Name">
@@ -114,7 +120,10 @@
                                   </span>             
                                 </td>
                               </tr>                
-                              <tr>                  
+                              <tr>   
+                                <td>
+                                  
+                                </td>               
                                 <td>
                                   <form id="new-game-form" v-on:submit.prevent="addNew($event, 'game')">
                                     <input type="text" class="form-control" v-model="newForm.team1Name" placeholder="Team-1 Name">
@@ -142,6 +151,11 @@
                               </tr>               
                             </tbody>
                           </table>
+
+                          <button v-on:click="convert2CSV($event, gamesList, 'game')" name="" class="btn btn-success btn-sm">
+                            <i class="bi-download">  Export to CSV</i>
+                          </button>
+
                     </div>              
                 </div>
             </div>

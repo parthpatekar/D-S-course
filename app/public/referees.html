@@ -45,6 +45,9 @@
                         <table id="referee-table" class="table">
                             <thead>
                                 <th>
+                                    Referee ID
+                                </th>
+                                <th>
                                     First Name
                                 </th>
                                 <th>
@@ -66,9 +69,11 @@
                             <tbody>
                               <tr v-for="referee in refereesList">
                                 <td>
+                                  <span> {{ referee.refereeID }} </span>
+                                </td>
+                                <td>
                                     <span v-if="referee.editmode"><input v-model="referee.refereeFirstName" class="form-control" placeholder="First Name"></span>
                                     <span v-else> {{ referee.refereeFirstName }} </span>
-                                  </form>
                                 </td>
                                 <td>
                                     <span v-if="referee.editmode"><input v-model="referee.refereeLastName" class="form-control" placeholder="Last Name"></span>
@@ -107,7 +112,10 @@
                                   </span>             
                                 </td>
                               </tr>                
-                              <tr>                  
+                              <tr>     
+                                <td>
+                                  
+                                </td>             
                                 <td>
                                   <form id="new-referee-form" v-on:submit.prevent="addNew($event, 'referee')">
                                     <input type="text" name="refereeFirstName" v-model="newForm.refereeFirstName" class="form-control" placeholder="First Name">
@@ -133,6 +141,10 @@
                               </tr>               
                             </tbody>
                           </table>
+
+                        <button v-on:click="convert2CSV($event, refereesList, 'referee')" name="" class="btn btn-success btn-sm">
+                            <i class="bi-download">  Export to CSV</i>
+                        </button>
                     </div>
                 </div>
             </div>

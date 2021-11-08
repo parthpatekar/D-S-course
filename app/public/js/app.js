@@ -8,6 +8,7 @@ const App = {
             newForm: {},
             updateForm: {},
             dateform:{},
+            csv: "",
 
             showAssignmentTable: false,
         }
@@ -62,6 +63,22 @@ const App = {
             .catch( (err) => {
                 console.error(err);
             })
+        },        
+        convert2CSV(event, tableJSON, entityType) {            
+            let csvContent = "data:text/csv;charset=utf-8,";
+            csvContent += Object.keys(tableJSON[0]).join(",")+"\r\n";
+            tableJSON.forEach(function(rowObj) {
+                let row = Object.values(rowObj).join(",");
+                csvContent += row + "\r\n";
+            });
+
+            var encodedUri = encodeURI(csvContent);
+            var link = document.createElement("a");
+            link.setAttribute("href", encodedUri);
+
+            link.setAttribute("download", entityType + ".csv");
+            document.body.appendChild(link);
+            link.click();
         },
         edit(entity, entityType){           
             entity.editmode = true;
