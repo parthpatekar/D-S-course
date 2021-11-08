@@ -106,7 +106,7 @@ const App = {
                 var request = '/api/games/create.php';
             else if(entityType == 'assignment')
                 var request = '/api/manageAssignments/create.php';
-
+            
             fetch(request, {
                 method: "POST",
                 body: JSON.stringify(this.newForm),

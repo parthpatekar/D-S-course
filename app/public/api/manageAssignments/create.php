@@ -12,6 +12,8 @@ try {
     exit;
 }
 
+echo $_POST;
+
 require("class/DbConnection.php");
 
 
