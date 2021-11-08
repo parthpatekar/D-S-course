@@ -51,14 +51,14 @@
                                     Teams
                                 </th>
                                 <th>
-                                    Date & Time
+                                    Date
                                 </th>
                                 <th>
                                     Game Level                                    
                                 </th>
-                                <th>
+                                <!-- <th>
                                     Unassigned Referees
-                                </th>
+                                </th> -->
                             </thead>
                             <tbody>
                               <tr v-for="game in assList">
@@ -85,10 +85,10 @@
                                   <span v-if="game.editmode"><input v-model="game.gameLevel" class="form-control" placeholder="Level"></span>
                                   <span v-else> {{ game.gameLevel }} </span>
                                 </td>
-                                <td>
+                                <!-- <td>
                                     <span v-if="game.editmode">
                                         <input v-model="game.fieldName" class="form-control" placeholder="Unassigned Refs">
-                                </td>
+                                </td> -->
                               
                               </tr>                
                             </tbody>
