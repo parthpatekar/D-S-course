@@ -27,15 +27,16 @@ $db = DbConnection::getConnection();
 // Step 2: Create & run the query
 // Note the use of parameterized statements to avoid injection
 $stmt = $db->prepare(
-  'insert into Referees (refereeFirstName, refereeLastName, refereeAge, refereeGrade)
-  values (?, ?, ?, ?);'
+  'insert into Referees (refereeFirstName, refereeLastName, refereeAge, refereeGrade, refereeSkill)
+  values (?, ?, ?, ?, ?);'
 );
 
 $stmt->execute([
   $_POST['refereeFirstName'],
   $_POST['refereeLastName'],
   $_POST['refereeAge'],
-  $_POST['refereeGrade']
+  $_POST['refereeGrade'],
+  $_POST['refereeSkill']
 ]);
 
 // Get auto-generated PK from DB

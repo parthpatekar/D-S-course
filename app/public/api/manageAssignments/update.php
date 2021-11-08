@@ -24,7 +24,7 @@ $db = DbConnection::getConnection();
 // Step 2: Create & run the query
 // Note the use of parameterized statements to avoid injection
 $stmt = $db->prepare(
-  ' UPDATE Games 
+  ' UPDATE Assignments 
     SET 
         gameID = ?,
         assignmentStatus1 = ?, 
@@ -34,7 +34,7 @@ $stmt = $db->prepare(
         assignmentStatus3 = ?, 
         refereeID3 = ?, 
         assignmentStatus4 = ?, 
-        refereeID4 = ?, 
+        refereeID4 = ? 
     WHERE assignmentID = ?'
 );
 

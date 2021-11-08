@@ -10,7 +10,7 @@ const App = {
             dateform:{},
             csv: "",
             assList:[],
-
+            optionsList:['Assigned','Unassigned','Accepted','Declined','N/A'],
             showAssignmentTable: false,
         }
     },
@@ -126,6 +126,8 @@ const App = {
                     this.fetchRefereesList();
                 else if(entityType == 'game')
                     this.fetchGamesList();
+                else if(entityType == 'assignment')
+                    this.fetchAssignmentsList();
                 this.updateForm = {};
             });            
         },

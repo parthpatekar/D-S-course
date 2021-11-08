@@ -35,7 +35,7 @@
               <li class="nav-item"><a href="games.html" class="nav-link">Games</a></li>
               <li class="nav-item"><a href="assign.html" class="nav-link">View Assignments</a></li>
               <li class="nav-item"><a href="manageAssignments.html" class="nav-link">Manage Assignments</a></li>
-              <li class="nav-item"><a href="refassign.html" class="nav-link">Ref's Assigned</a></li>
+              <li class="nav-item"><a href="refassign.html" class="nav-link">Unassigned Games</a></li>
 
             </ul>
         </nav>
@@ -60,6 +60,9 @@
                                 </th>
                                 <th>
                                     Grade
+                                </th>
+                                <th>
+                                    Skill
                                 </th>
                                 <th>
                 
@@ -89,6 +92,10 @@
                                   <span v-if="referee.editmode"><input v-model="referee.refereeGrade" class="form-control" placeholder="Grade"></span>
                                   <span v-else> {{ referee.refereeGrade }} </span>
                                 </td>
+                                <td>
+                                    <span v-if="referee.editmode"><input v-model="referee.refereeSkill" class="form-control" placeholder="Skill"></span>
+                                    <span v-else> {{ referee.refereeSkill }} </span>
+                                  </td>
                                 <td>
                                     <span v-if="!referee.editmode">
                                       <button name="update" v-on:click="edit(referee, 'referee')" class="btn btn-primary btn-sm">
@@ -131,6 +138,9 @@
                                 </td>
                                 <td>
                                     <input form="new-referee-form" type="number" min="1" max="4" v-model="newForm.refereeGrade" class="form-control" placeholder="Grade">
+                                </td>
+                                <td>
+                                    <input form="new-referee-form" type="number" min="1" max="100" v-model="newForm.refereeSkill" class="form-control" placeholder="Skill">
                                 </td>
                                 <td>
                                     <button form="new-referee-form" type="submit" name="add" class="btn btn-success btn-sm">

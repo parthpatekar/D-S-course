@@ -35,7 +35,7 @@
                 <li class="nav-item"><a href="games.html" class="nav-link">Games</a></li>
                 <li class="nav-item"><a href="assign.html" class="nav-link">View Assignments</a></li>
                 <li class="nav-item"><a href="manageAssignments.html" class="nav-link">Manage Assignments</a></li>
-                <li class="nav-item"><a href="refassign.html" class="nav-link active" aria-current="page">Ref's Assigned</a></li>
+                <li class="nav-item"><a href="refassign.html" class="nav-link active" aria-current="page">Unassigned Games</a></li>
             </ul>
         </nav>
 
@@ -94,6 +94,9 @@
                               </tr>                
                             </tbody>
                           </table>
+                          <button v-on:click="convert2CSV($event, assList, 'unassigned')" name="" class="btn btn-success btn-sm">
+                                <i class="bi-download">  Export to CSV</i>
+                            </button>
                     </div>              
                 </div>
             </div>

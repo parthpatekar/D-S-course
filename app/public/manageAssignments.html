@@ -35,7 +35,7 @@
                 <li class="nav-item"><a href="games.html" class="nav-link">Games</a></li>
                 <li class="nav-item"><a href="assign.html" class="nav-link">View Assignments</a></li>
                 <li class="nav-item"><a href="manageAssignments.html" class="nav-link active" aria-current="page">Manage Assignments</a></li>
-                <li class="nav-item"><a href="refassign.html" class="nav-link">Ref's Assigned</a></li>
+                <li class="nav-item"><a href="refassign.html" class="nav-link">Unassigned Games</a></li>
             </ul>
         </nav>
 
@@ -49,25 +49,25 @@
                                     Game ID
                                 </th>
                                 <th>
-                                    Referee ID 1
+                                    Referee Name 1
                                 </th>
                                 <th>
                                     Status 1
                                 </th>
                                 <th>
-                                    Referee ID 2
+                                    Referee Name 2
                                 </th>
                                 <th>
                                     Status 2
                                 </th>
                                 <th>
-                                    Referee ID 3
+                                    Referee Name 3
                                 </th>
                                 <th>
                                     Status 3
                                 </th>
                                 <th>
-                                    Referee ID 4
+                                    Referee Name 4
                                 </th>
                                 <th>
                                     Status 4
@@ -83,55 +83,80 @@
                               <tr v-for="assignment in manageAssignmentsList">
                                 <td>
                                     <span v-if="assignment.editmode">
-                                        <input type="number" v-model="assignment.gameID" class="form-control" placeholder="Game ID">
+                                        <!-- <input type="number" v-model="assignment.gameID" class="form-control" placeholder="Game ID"> -->
+                                        {{ assignment.gameID }}
                                     </span>
                                     <span v-else> {{ assignment.gameID }} </span>
                                 </td>
                                 <td>
                                     <span v-if="assignment.editmode">
-                                        <input type="number" v-model="assignment.refereeID1" class="form-control" placeholder="Referee ID 1">
+                                        <!-- <input type="number" v-model="assignment.refereeID1" class="form-control" placeholder="Referee ID 1"> -->
+                                        <select id="offerStatus" v-model="assignment.refereeID1" class="form-control">
+                                                <option v-for="referee in refereesList" :value="referee.refereeID">{{referee.refereeFirstName}}</option>
+                                        </select>
                                     </span>
-                                    <span v-else> {{ assignment.refereeID1 }} </span>
+                                    <span v-else> {{ assignment.refereeName1 }} </span>
                                 </td>
                                 <td>
                                     <span v-if="assignment.editmode">
-                                        <input type="text" v-model="assignment.assignmentStatus1" class="form-control" placeholder="Status 1">
+                                        <!-- <input type="text" v-model="assignment.assignmentStatus1" class="form-control" placeholder="Status 1"> -->
+                                        <select id="offerStatus" v-model="assignment.assignmentStatus1" class="form-control">
+                                                <option v-for="o in optionsList" :value="o">{{o}}</option>
+                                        </select>
                                     </span>
                                     <span v-else> {{ assignment.assignmentStatus1 }} </span>
                                 </td>
                                 <td>
                                     <span v-if="assignment.editmode">
-                                        <input type="number" v-model="assignment.refereeID2" class="form-control" placeholder="Referee ID 2">
+                                        <!-- <input type="number" v-model="assignment.refereeID2" class="form-control" placeholder="Referee ID 2"> -->
+                                        <select id="offerStatus" v-model="assignment.refereeID2" class="form-control">
+                                                <option v-for="referee in refereesList" :value="referee.refereeID">{{referee.refereeFirstName}}</option>
+                                        </select>
                                     </span>
-                                    <span v-else> {{ assignment.refereeID2 }} </span>
+                                    <span v-else> {{ assignment.refereeName2 }} </span>
                                 </td>
                                 <td>
                                     <span v-if="assignment.editmode">
-                                        <input type="text" v-model="assignment.assignmentStatus2" class="form-control" placeholder="Status 2">
+                                        <!-- <input type="text" v-model="assignment.assignmentStatus2" class="form-control" placeholder="Status 2"> -->
+                                        <select id="offerStatus" v-model="assignment.assignmentStatus2" class="form-control">
+                                                <option v-for="o in optionsList" :value="o">{{o}}</option>
+                                        </select>
                                     </span>
                                     <span v-else> {{ assignment.assignmentStatus2 }} </span>
                                 </td>
                                 <td>
                                     <span v-if="assignment.editmode">
-                                        <input type="number" v-model="assignment.refereeID3" class="form-control" placeholder="Referee ID 3">
+                                        <!-- <input type="number" v-model="assignment.refereeID3" class="form-control" placeholder="Referee ID 3"> -->
+                                        <select id="offerStatus" v-model="assignment.refereeID3" class="form-control">
+                                                <option v-for="referee in refereesList" :value="referee.refereeID">{{referee.refereeFirstName}}</option>
+                                        </select>
                                     </span>
-                                    <span v-else> {{ assignment.refereeID3 }} </span>
+                                    <span v-else> {{ assignment.refereeName3 }} </span>
                                 </td>
                                 <td>
                                     <span v-if="assignment.editmode">
-                                        <input type="text" v-model="assignment.assignmentStatus3" class="form-control" placeholder="Status 3">
+                                        <!-- <input type="text" v-model="assignment.assignmentStatus3" class="form-control" placeholder="Status 3"> -->
+                                        <select id="offerStatus" v-model="assignment.assignmentStatus3" class="form-control">
+                                                <option v-for="o in optionsList" :value="o">{{o}}</option>
+                                        </select>
                                     </span>
                                     <span v-else> {{ assignment.assignmentStatus3 }} </span>
                                 </td>
                                 <td>
                                     <span v-if="assignment.editmode">
-                                        <input type="number" v-model="assignment.refereeID4" class="form-control" placeholder="Referee ID 4">
+                                        <!-- <input type="number" v-model="assignment.refereeID4" class="form-control" placeholder="Referee ID 4"> -->
+                                        <select id="offerStatus" v-model="assignment.refereeID4" class="form-control">
+                                                <option v-for="referee in refereesList" :value="referee.refereeID">{{referee.refereeFirstName}}</option>
+                                        </select>
                                     </span>
-                                    <span v-else> {{ assignment.refereeID4 }} </span>
+                                    <span v-else> {{ assignment.refereeName4 }} </span>
                                 </td>
                                 <td>
                                     <span v-if="assignment.editmode">
-                                        <input type="text" v-model="assignment.assignmentStatus4" class="form-control" placeholder="Status 4">
+                                        <!-- <input type="text" v-model="assignment.assignmentStatus4" class="form-control" placeholder="Status 4"> -->
+                                        <select id="offerStatus" v-model="assignment.assignmentStatus4" class="form-control">
+                                                <option v-for="o in optionsList" :value="o">{{o}}</option>
+                                        </select>
                                     </span>
                                     <span v-else> {{ assignment.assignmentStatus4 }} </span>
                                 </td>                                
@@ -163,31 +188,56 @@
                               <tr>                  
                                 <td>
                                   <form id="new-assignment-form" v-on:submit.prevent="addNew($event, 'assignment')">
-                                    <input type="number" v-model="newForm.gameID" class="form-control" placeholder="Game ID">
+                                    <input type="number" v-model="newForm.gameID" class="form-control" placeholder="Game ID" min=1>
                                   </form>
                                 </td>
-                                <td>
-                                    <input form="new-assignment-form" type="number" v-model="newForm.refereeID1" class="form-control" placeholder="Referee ID 1">
+                                <td>                                    
+                                    <select id="offerStatus" form="new-assignment-form"  v-model="newForm.refereeID1" class="form-control">
+                                            <option v-for="referee in refereesList" :value="referee.refereeID">{{referee.refereeFirstName}}</option>
+                                    </select>
+                              
                                 </td>
                                 <td>
-                                    <input form="new-assignment-form" type="text" v-model="newForm.assignmentStatus1" class="form-control" placeholder="Status 1">
+                                    <!-- <input form="new-assignment-form" type="text" v-model="newForm.assignmentStatus1" class="form-control" placeholder="Status 1"> -->
+                                    <select id="offerStatus" form="new-assignment-form" v-model="newForm.assignmentStatus1" class="form-control">
+                                            <option v-for="o in optionsList" :value="o">{{o}}</option>
+                                    </select>
                                 </td>
                                 <td>
-                                    <input form="new-assignment-form" type="number" v-model="newForm.refereeID2" class="form-control" placeholder="Referee ID 2">
+                                    <!-- <input form="new-assignment-form" type="number" v-model="newForm.refereeID2" class="form-control" placeholder="Referee ID 2"> -->
+                                    <select id="offerStatus" form="new-assignment-form" v-model="newForm.refereeID2" class="form-control">
+                                            <option v-for="referee in refereesList" :value="referee.refereeID">{{referee.refereeFirstName}}</option>
+                                    </select>
                                 </td>
                                 <td>
-                                    <input form="new-assignment-form" type="text" v-model="newForm.assignmentStatus2" class="form-control" placeholder="Status 2">
+                                    <!-- <input form="new-assignment-form" type="text" v-model="newForm.assignmentStatus2" class="form-control" placeholder="Status 2"> -->
+                                    <select id="offerStatus" form="new-assignment-form"  v-model="newForm.assignmentStatus2" class="form-control">
+                                            <option v-for="o in optionsList" :value="o">{{o}}</option>
+                                    </select>
                                 </td>
                                 <td>
-                                    <input form="new-assignment-form" type="number" v-model="newForm.refereeID3" class="form-control" placeholder="Referee ID 3">
+                                        <select id="offerStatus" form="new-assignment-form" v-model="newForm.refereeID3" class="form-control">
+                                                <option v-for="referee in refereesList" :value="referee.refereeID">{{referee.refereeFirstName}}</option>
+                                        </select>
+                                    <!-- <input form="new-assignment-form" type="number" v-model="newForm.refereeID3" class="form-control" placeholder="Referee ID 3"> -->
                                 </td>
                                 <td>
-                                    <input form="new-assignment-form" type="text" v-model="newForm.assignmentStatus3" class="form-control" placeholder="Status 3">
-                                </td><td>
-                                    <input form="new-assignment-form" type="number" v-model="newForm.refereeID4" class="form-control" placeholder="Referee ID 4">
+                                    <!-- <input form="new-assignment-form" type="text" v-model="newForm.assignmentStatus3" class="form-control" placeholder="Status 3"> -->
+                                    <select id="offerStatus" form="new-assignment-form" v-model="newForm.assignmentStatus3" class="form-control">
+                                            <option v-for="o in optionsList" :value="o">{{o}}</option>
+                                    </select>
                                 </td>
                                 <td>
-                                    <input form="new-assignment-form" type="text" v-model="newForm.assignmentStatus4" class="form-control" placeholder="Status 4">
+                                    <!-- <input form="new-assignment-form" type="number" v-model="newForm.refereeID4" class="form-control" placeholder="Referee ID 4"> -->
+                                    <select id="offerStatus" form="new-assignment-form" v-model="newForm.refereeID4" class="form-control">
+                                            <option v-for="referee in refereesList" :value="referee.refereeID">{{referee.refereeFirstName}}</option>
+                                    </select>
+                                </td>
+                                <td>
+                                    <!-- <input form="new-assignment-form" type="text" v-model="newForm.assignmentStatus4" class="form-control" placeholder="Status 4"> -->
+                                    <select id="offerStatus"form="new-assignment-form" v-model="newForm.assignmentStatus4" class="form-control">
+                                            <option v-for="o in optionsList" :value="o">{{o}}</option>
+                                    </select>
                                 </td>
                                 <td>
                                     <button form="new-assignment-form" type="submit" name="add" class="btn btn-success btn-sm">

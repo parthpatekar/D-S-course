@@ -24,7 +24,7 @@ $query = "  SELECT
                 ON Games.team1 = t1.teamID 
                 JOIN Teams t2
                 ON Games.team2 = t2.teamID 
-            ORDER BY gameDate
+            ORDER BY gameID
             ";
 $vars = [];
 $stmt = $db->prepare($query);

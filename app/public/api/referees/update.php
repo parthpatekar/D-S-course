@@ -28,7 +28,8 @@ $stmt = $db->prepare(
     refereeFirstName = ?,
     refereeLastName = ?,
     refereeAge = ?,
-    refereeGrade = ?
+    refereeGrade = ?,
+    refereeSkill = ?
   WHERE refereeID = ?'
 );
 
@@ -37,8 +38,9 @@ if($stmt->execute([
   $_POST['refereeLastName'],
   $_POST['refereeAge'],
   $_POST['refereeGrade'],
+  $_POST['refereeSkill'],
   $_POST['refereeID']
-]))
+]));
 
 // Get auto-generated PK from DB
 // https://www.php.net/manual/en/pdo.lastinsertid.php
